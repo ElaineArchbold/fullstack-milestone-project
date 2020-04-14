@@ -1,35 +1,63 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+## Elaine Archbold Full Stack Milestone Project
 
-Welcome USER_NAME,
+For this project, I created a website for Alio Prints which is a graphic design business I started a few years ago.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+## UX
+My goal in the design was to create a very user friendly site where users could view and order their own custom print.
 
-## Gitpod Reminders
+I kept the Navbar and footer simple, and the colour theme is subtle. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+*User A – 
+*User B – 
+*User C - 
+*User D - 
+The site can be viewed through Heroku: 
 
-`python3 -m http.server`
+I created Wireframes of how I wanted the site to look before starting. See below:
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Features
+### Existing Features
 
-A blue button should appear to click: *Make Public*,
+### Features Left to Implement
 
-Another blue button should appear to click: *Open Browser*.
+## Technologies Used
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
 
-## Updates Since The Instructional Video
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+## Testing
+LINKS – I have tested all links. The Instagram, YouTube and Facebook links in the footer go the relevant accounts. I have set up EmailJS for the email link in the footer.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+I used Google Developer Tools to check the responsiveness of the site. The navbar and footer are responsive and reduce on smaller screens. I have used media queries throughout to allow for better UX on mobile devices.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+The site had been tested on Chrome, Firefox and Safari.
 
---------
+All HTML was checked on the W3C Mark-up Validation Service.
 
-Happy coding!
+The CSS was checked on the W3C CSS Validation Service.
+
+All HTML was formatted on https://freeformatter.com.
+
+Screenshots of the responsive design can be seen here:
+
+
+## Deployment
+
+
+## Credits
+### Content
+
+
+### Media
+
+### Acknowledgements
+The footer and navbar were taken and amended from previous projects.
+
+I found the scrolling parallax tutorial on: https://www.w3schools.com/howto/howto_css_parallax.asp
+
+I found the lightbox snippet on the Inspiration page on: https://epicbootstrap.com/snippets/lightbox-gallery
+
+I found the snippet for the YouTube video gallery on the Tips page on: http://www.prebootstrap.com/bootstrap-template/video-gallery
+
+I found the javascript function for storing the shopping list on: http://www.marcorpsa.com/ee/t2641.html
