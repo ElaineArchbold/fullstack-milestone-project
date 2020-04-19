@@ -11,14 +11,16 @@
     <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/custom.css' %}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>  
+
+    
     {% block head_js %}
     {% endblock head_js %}
 </head>
 <body>
     <!-- Fixed masthead -->
   <nav class="navbar navbar-masthead navbar-default navbar-fixed-top">
-        <div class="container">
+       
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
@@ -42,13 +44,20 @@
                         </a>
                     </li>
                        <li><div class="dropdown">
-    <a href="#" class="dropdown-toggle" style="color:white" data-toggle="dropdown">Account</a><i class="fa fa-caret-down"></i>
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account</a><i class="fa fa-caret-down"></i>
     <div class="dropdown-menu">
         <a href="{% url 'profile' %}"><i class="fa fa-user"></i>Profile</a>
        <a href="{% url 'logout' %}"><i class="fa fa-sign-out"></i>Log Out</a>
     </div>
 </div></li>
-                    
+<li> <div class="search-display">
+            <form action="{% url 'search' %}" method="get">
+                <input type="text" name="q" placeholder="Search">
+                <button type="search"><i class="fa fa-search"></i></button>
+            </form>
+          
+        </div>
+             </li>         
                     {%  else %}
                         <li><a href="{% url 'registration' %}"><i class="fa fa-user-plus"></i>Register</a></li>
                         <li><a href="{% url 'login' %}"><i class="fa fa-sign-in"></i>Log In</a></li>
@@ -56,7 +65,7 @@
                    
                 </ul>
             </div>
-        </div>
+        
     </nav>
  {% if messages %}
         <div class="alert alert-success">
@@ -67,14 +76,14 @@
             </div>
         </div>
     {% endif %}
-    <div class="container">
+  <!--<div class="container-fluid">
         <div class="display" style="padding-top:60px; float:right">
             <form action="{% url 'search' %}" method="get">
                 <input type="text" name="q">
                 <button type="search">Search</button>
             </form>
         </div>
-        </div>
+        </div>-->
         {% block content %} {% endblock %}
     
 
@@ -103,7 +112,6 @@
             </div>
          </div>
       </footer>
-    
 </body>
 
 </html>
