@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block content %}
+    <!--SECTION ONE-->
+    <section id="quote">
+        <div class="jumbotron parallaxone">
+            <div class="container-fluid text-center">
+                <h1>'Welcome to Alio Print & Design!</h1>
+            </div>
+        </div>
+    </section>
+    <!--SECTION TWO-->
+    <section id="about-me">
+        <div class="jumbotron parallaxtwo">
+            <div class="row about-me">
+                <div class="col-md-7">
+                    <h1>what makes me tick?</h1>
+                    <p>Photography can defeat time. Images can keep the memory of a loved one alive, hold a moment in history for future generations, be a witness to tragedy or joy. They can also change behaviour, stimulate understanding and creat a sense of urgency that will move people to action.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECTION THREE-->
+    <section id="photo-examples">
+        <div class="jumbotron parallaxthree">
+            <div class="container-fluid text-center ">
+                <h1>a little taster of my work</h1>
+                <br>
+                <!--Carousel-->
+                <div class="carousel slide carousel" id="carouselcontrols" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="/media/images/classic-girl.png" alt="Classic Girl">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/media/images/communion.png" alt="Communion Prints">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="/media/images/dandelion-wish.png" alt="Dandelion Wish">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="assets/images/wlights2.jpg" alt="Wildlights2">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="assets/images/eire4.jpg" alt="Ireland">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="assets/images/BW2.jpg" alt="B&W2">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="assets/images/wlights3.jpg" alt="Wildlights3">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="assets/images/italy2.jpg" alt="Italian Series2">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="assets/images/BW3.jpg" alt="B&W3">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="assets/images/eire3.jpg" alt="Ireland2">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="assets/images/wlights4.jpg" alt="Wildlights4">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="assets/images/BW2.jpg" alt="B&W2">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselcontrols" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                  </a>
+                    <a class="carousel-control-next" href="#carouselcontrols" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                  </a>
+                </div>
+                <a href="portfolio.html">
+                    <p>View my Portfolio</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--SECTION FOUR-->
+    <section id="get-in-touch">
+        <div class="jumbotron parallaxfour">
+            <div class="container-fluid text-center">
+                <h1>want to collaborate?</h1>
+            </div>
+            <div class="center-form">
+                <form>
+                    <label class="form-text" for="name">name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required />
+                    <label class="form-text" for="emailaddress">email</label>
+                    <input type="email" name="email" id="emailaddress" class="form-control " placeholder="Your Email" required />
+                    <label class="form-text" for="description">what have you got in mind?</label>
+                    <textarea rows="5" name="description" id="description" class="form-control" placeholder="What have you got in mind?" required></textarea>
+                    <div class="form-row text-center">
+                        <div class="col">
+                            <button type="submit" class="btn btn-secondary">submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

@@ -4,10 +4,10 @@ from django.db import models
 
 CATEGORY_CHOICES = (
     ('Baby', 'BABY PRINTS'),
-    ('Christening Prints', 'CHRISTENING PRINTS'),
-    ('Engagement Prints', 'ENGAGEMENT PRINTS'),
-    ('Wedding Prints', 'WEDDING PRINTS'),
-    ('Family Prints', 'FAMILY PRINTS'),
+    ('Christening', 'CHRISTENING PRINTS'),
+    ('Engagement', 'ENGAGEMENT PRINTS'),
+    ('Wedding', 'WEDDING PRINTS'),
+    ('Family', 'FAMILY PRINTS'),
 )
 
 

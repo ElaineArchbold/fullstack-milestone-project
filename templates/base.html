@@ -26,18 +26,14 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">Alio Prints</a>
+                <a class="navbar-brand brand-logo" href="/">Alio Prints</a>
             </div>
+
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     {% if user.is_authenticated %}
-                        <li><a href="{% url 'profile' %}"><i class="fa fa-user"></i>Profile</a></li>
-                        <li><a href="{% url 'logout' %}"><i class="fa fa-sign-out"></i>Log Out</a></li>
-                    {%  else %}
-                        <li><a href="{% url 'registration' %}"><i class="fa fa-user-plus"></i>Register</a></li>
-                        <li><a href="{% url 'login' %}"><i class="fa fa-sign-in"></i>Log In</a></li>
-                    {% endif %}
-                    <li>
+                        <li><a href="{% url 'products' %}">Shop</a></li>
+                         <li>
                         <a href="{% url 'view_cart' %}">
                             <i class="fa fa-shipping-cart"></i>Cart
                             {% if product_count > 0 %}
@@ -45,11 +41,24 @@
                             {% endif %}
                         </a>
                     </li>
+                       <li><div class="dropdown">
+    <a href="#" class="dropdown-toggle" style="color:white" data-toggle="dropdown">Account</a><i class="fa fa-caret-down"></i>
+    <div class="dropdown-menu">
+        <a href="{% url 'profile' %}"><i class="fa fa-user"></i>Profile</a>
+       <a href="{% url 'logout' %}"><i class="fa fa-sign-out"></i>Log Out</a>
+    </div>
+</div></li>
+                    
+                    {%  else %}
+                        <li><a href="{% url 'registration' %}"><i class="fa fa-user-plus"></i>Register</a></li>
+                        <li><a href="{% url 'login' %}"><i class="fa fa-sign-in"></i>Log In</a></li>
+                    {% endif %}
+                   
                 </ul>
             </div>
         </div>
     </nav>
-    {% if messages %}
+ {% if messages %}
         <div class="alert alert-success">
             <div class="messages">
                 {% for message in messages %}
@@ -58,17 +67,43 @@
             </div>
         </div>
     {% endif %}
-    <div class="container search">
-        <div class="display">
+    <div class="container">
+        <div class="display" style="padding-top:60px; float:right">
             <form action="{% url 'search' %}" method="get">
                 <input type="text" name="q">
                 <button type="search">Search</button>
             </form>
         </div>
+        </div>
         {% block content %} {% endblock %}
-    </div>
-    <footer>
-     
-    </footer>
+    
+
+ <!--FOOTER-->
+      <footer class="container-fluid footer-details">
+         <div class="row footer-details">
+            <div class="col-xs-12 col-sm-12">
+               <ul class="list-inline social-links">
+                  <li class="list-inline-item">
+                     <a target="_blank" href="https://www.facebook.com/groups/2241482005934815/">
+                     <i class="fa fa-facebook" aria-hidden="true"></i>
+                     <span class="sr-only">Facebook</span></a>
+                  </li>
+                  <li class="list-inline-item">
+                     <a target="_blank" href="https://www.instagram.com/mrshinchhome/?utm_source=ig_embed">
+                     <i class="fa fa-instagram" aria-hidden="true"></i>
+                     <span class="sr-only">Instagram</span></a>
+                  </li>
+                  <li class="list-inline-item">
+                     <a target="_blank" href="https://www.youtube.com/channel/UC6FdaW8Y3m699JdYRNCixIQ/videos">
+                     <i class="fa fa-youtube" aria-hidden="true"></i>
+                     <span class="sr-only">YouTube</span></a>
+                  </li>
+                 
+               </ul>
+            </div>
+         </div>
+      </footer>
+    
 </body>
+
 </html>
