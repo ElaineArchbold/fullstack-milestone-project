@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/ElaineArchbold/fullstack-milestone-project.svg?branch=master)](https://travis-ci.org/ElaineArchbold/fullstack-milestone-project)
 
 ## Elaine Archbold Full Stack Milestone Project
 
