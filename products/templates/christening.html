@@ -3,24 +3,14 @@
 
 {% block content %}
 <div class="products-container">
-
-<ul class="breadcrumb" style="text-align:center">
-  <li>All Products</li>
-  <li><a href="{% url 'baby' %}">Baby Prints</a></li>
-   <li><a href="{% url 'christening' %}">Christening Prints</a></li>
-    <li><a href="{% url 'communions' %}">Communion Prints</a></li>
-     <li><a href="{% url 'engagement' %}">Engagement Prints</a></li>
-  <li><a href="{% url 'family' %}">Family Prints</a></li>
-  <li><a href="{% url 'fathersday' %}">Fathers Day Prints</a></li>
-  <li><a href="{% url 'fingerprint' %}">Fingerprint Kits</a></li>
-  <li><a href="{% url 'mothersday' %}">Mothers Day Prints</a></li>
-  <li><a href="{% url 'teacher' %}">Teacher Prints</a></li>
-  <li><a href="{% url 'wedding' %}">Wedding Prints</a></li>
+<ul class="breadcrumb">
+  <li><a href="{% url 'products' %}">All Products</a></li>
+  <li>Christening Prints</li>
 </ul>
 
-<h3>All Products</h3>
+<h3>Christening Prints</h3>
     {% for product in products %}
-
+  {% if product.category == 'christening' %}
         <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-3 display panel panel-default">
             <div class="panel-body">
                 <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
@@ -40,7 +30,7 @@
                 </form>
             </div>
         </div>
-
+{% endif %}
     {% endfor %}
  </div>
 {% endblock %}

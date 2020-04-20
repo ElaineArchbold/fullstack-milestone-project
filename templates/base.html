@@ -34,7 +34,24 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav navbar-right">
                     {% if user.is_authenticated %}
-                        <li><a href="{% url 'products' %}">Shop</a></li>
+    <li><div class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop</a><i class="fa fa-caret-down"></i>
+    <div class="dropdown-menu" style="text-align:center">
+        <a href="{% url 'products' %}">All Products</a><br>
+          <a href="{% url 'baby' %}">Baby Prints</a>
+          <a href="{% url 'christening' %}">Christening Prints</a>
+          <a href="{% url 'communions' %}">Communion Prints</a>
+          <a href="{% url 'engagement' %}">Engagement Prints</a>
+          <a href="{% url 'family' %}">Family Prints</a>
+          <a href="{% url 'fathersday' %}">Fathers Day Prints</a>
+          <a href="{% url 'fingerprint' %}">Fingerprint Kits</a>
+          <a href="{% url 'mothersday' %}">Mothers Day Prints</a>
+          <a href="{% url 'teacher' %}">Teacher Prints</a>
+          <a href="{% url 'wedding' %}">Wedding Prints</a>
+    </div>
+</div></li>
+
+
                          <li>
                         <a href="{% url 'view_cart' %}">
                             <i class="fa fa-shipping-cart"></i>Cart
@@ -76,14 +93,7 @@
             </div>
         </div>
     {% endif %}
-  <!--<div class="container-fluid">
-        <div class="display" style="padding-top:60px; float:right">
-            <form action="{% url 'search' %}" method="get">
-                <input type="text" name="q">
-                <button type="search">Search</button>
-            </form>
-        </div>
-        </div>-->
+
         {% block content %} {% endblock %}
     
 
