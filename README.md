@@ -1,4 +1,4 @@
-
+[![Build Status](https://travis-ci.org/ElaineArchbold/fullstack-milestone-project.svg?branch=master)](https://travis-ci.org/ElaineArchbold/fullstack-milestone-project)
 ## Elaine Archbold Full Stack Milestone Project
 
 For this project, I created a website for Alio Prints which is a graphic design business I started a few years ago.

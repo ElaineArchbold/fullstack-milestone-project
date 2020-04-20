@@ -4,19 +4,6 @@
 {% block content %}
 <div class="products-container">
 
-<ul class="breadcrumb" style="text-align:center">
-  <li>All Products</li>
-  <li><a href="{% url 'baby' %}">Baby Prints</a></li>
-   <li><a href="{% url 'christening' %}">Christening Prints</a></li>
-    <li><a href="{% url 'communions' %}">Communion Prints</a></li>
-     <li><a href="{% url 'engagement' %}">Engagement Prints</a></li>
-  <li><a href="{% url 'family' %}">Family Prints</a></li>
-  <li><a href="{% url 'fathersday' %}">Fathers Day Prints</a></li>
-  <li><a href="{% url 'fingerprint' %}">Fingerprint Kits</a></li>
-  <li><a href="{% url 'mothersday' %}">Mothers Day Prints</a></li>
-  <li><a href="{% url 'teacher' %}">Teacher Prints</a></li>
-  <li><a href="{% url 'wedding' %}">Wedding Prints</a></li>
-</ul>
 
 <h3>All Products</h3>
     {% for product in products %}
