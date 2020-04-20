@@ -1,181 +1,69 @@
 <!DOCTYPE html>
+
 {% extends 'base.html' %}
+{% load staticfiles %}
 {% block content %}
 <div class="container-fluid background-container">
    <!--SECTION ONE-->
    <section id="about-me">
       <div class="jumbotron parallaxone">
-         <div class="row about-me" text-align="center">
-            <div class="col-md-7">
-               <div>
-                  <h2>Welcome to Alio Prints</h2>
-                  <p>Lets create something magical! </p>
-               </div>
-            </div>
-         </div>
+          <div class="jumbotron jumbotron-fluid bg-dark">
+  
+<h1 style="color:white">Welcome to Alio Prints! Lets create something beautiful!</h1>
+
       </div>
    </section>
    <!--SECTION TWO-->
-   <!--Icons for middle section on home page-->
-   <div class="jumbotron parallaxtwo">
-      <div class="container">
-         <div class="row">
-            <!--Carousel Wrapper-->
-            <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-               <!--Controls-->
-               <div class="controls-top">
-                  <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
-                  <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
-                     class="fas fa-chevron-right"></i></a>
+ <section class="parallaxtwo">
+ <div class="portfolio-images">
+         <h3>Our bestsellers...</h3>
+         <div class="photo-gallery">
+            <div class="container">
+               <div class="row photos">
+                  
+                  <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="media/images/classic-girl.png" data-lightbox="photos"><img class="img-fluid img-thumbnail" src="media/images/classic-girl.png" alt="bedroom1"></a>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="media/images/classic-boy.png" data-lightbox="photos"><img class="img-fluid img-thumbnail" src="media/images/classic-boy.png" alt="bedroom1"></a>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="media/images/wedding-fingerprint.png" data-lightbox="photos"><img class="img-fluid img-thumbnail" src="media/images/wedding-fingerprint.png" alt="bedroom1"></a>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="media/images/owl-girl.png" data-lightbox="photos"><img class="img-fluid img-thumbnail" src="media/images/owl-girl.png" alt="bedroom1"></a>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="media/images/owl-boy.png" data-lightbox="photos"><img class="img-fluid img-thumbnail" src="media/images/owl-boy.png" alt="bedroom1"></a>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="media/images/family-tree.png" data-lightbox="photos"><img class="img-fluid img-thumbnail" src="media/images/family-tree.png" alt="bedroom1"></a>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="media/images/house-rules-black.jpg" data-lightbox="photos"><img class="img-fluid img-thumbnail" src="media/images/house-rules-black.jpg" alt="bedroom1"></a>
+                  </div>
+                  <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="media/images/fingerprint-3.png" data-lightbox="photos"><img class="img-fluid img-thumbnail" src="media/images/fingerprint-3.png" alt="bedroom1"></a>
+                  </div>           
                </div>
-               <!--/.Controls-->
-               <!--Indicators-->
-               <ol class="carousel-indicators">
-                  <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-                  <li data-target="#multi-item-example" data-slide-to="1"></li>
-                  <li data-target="#multi-item-example" data-slide-to="2"></li>
-               </ol>
-               <!--/.Indicators-->
-               <!--Slides-->
-               <div class="carousel-inner" role="listbox">
-                  <!--First slide-->
-                  <div class="carousel-item active">
-                     <div class="col-md-4">
-                        <div class="card mb-2">
-                           <img class="card-img-top"
-                              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
-                              alt="Card image cap">
-                           <div class="card-body">
-                              <h4 class="card-title">Card title</h4>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                 card's content.
-                              </p>
-                              <a class="btn btn-primary">Button</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4">
-                        <div class="card mb-2">
-                           <img class="card-img-top"
-                              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
-                              alt="Card image cap">
-                           <div class="card-body">
-                              <h4 class="card-title">Card title</h4>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                 card's content.
-                              </p>
-                              <a class="btn btn-primary">Button</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4">
-                        <div class="card mb-2">
-                           <img class="card-img-top"
-                              src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
-                              alt="Card image cap">
-                           <div class="card-body">
-                              <h4 class="card-title">Card title</h4>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                 card's content.
-                              </p>
-                              <a class="btn btn-primary">Button</a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <!--/.First slide-->
-                  <!--Second slide-->
-                  <div class="carousel-item">
-                     <div class="col-md-4">
-                        <div class="card mb-2">
-                           <img class="card-img-top"
-                              src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
-                           <div class="card-body">
-                              <h4 class="card-title">Card title</h4>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                 card's content.
-                              </p>
-                              <a class="btn btn-primary">Button</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4">
-                        <div class="card mb-2">
-                           <img class="card-img-top"
-                              src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
-                           <div class="card-body">
-                              <h4 class="card-title">Card title</h4>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                 card's content.
-                              </p>
-                              <a class="btn btn-primary">Button</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4">
-                        <div class="card mb-2">
-                           <img class="card-img-top"
-                              src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
-                           <div class="card-body">
-                              <h4 class="card-title">Card title</h4>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                 card's content.
-                              </p>
-                              <a class="btn btn-primary">Button</a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <!--/.Second slide-->
-                  <!--Third slide-->
-                  <div class="carousel-item">
-                     <div class="col-md-4">
-                        <div class="card mb-2">
-                           <img class="card-img-top"
-                              src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg" alt="Card image cap">
-                           <div class="card-body">
-                              <h4 class="card-title">Card title</h4>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                 card's content.
-                              </p>
-                              <a class="btn btn-primary">Button</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4">
-                        <div class="card mb-2">
-                           <img class="card-img-top"
-                              src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg" alt="Card image cap">
-                           <div class="card-body">
-                              <h4 class="card-title">Card title</h4>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                 card's content.
-                              </p>
-                              <a class="btn btn-primary">Button</a>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="col-md-4">
-                        <div class="card mb-2">
-                           <img class="card-img-top"
-                              src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg" alt="Card image cap">
-                           <div class="card-body">
-                              <h4 class="card-title">Card title</h4>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                                 card's content.
-                              </p>
-                              <a class="btn btn-primary">Button</a>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <!--/.Third slide-->
-               </div>
-               <!--/.Slides-->
             </div>
-            <!--/.Carousel Wrapper-->
+         </div>
+      </div>
+      </section>
+      <!--SECTION THREE-->
+      <section class="parallaxthree">
+ <div class="main-form">
+ <div class="container-fluid">
+      <div class="col-12">
+         <h2>Get in touch!</h2>
+         <h5>I'd love to hear from you...</h5>
+         <div class="col-12">
+            <form id="myform" onsubmit="return sendMail(this);" method="POST" style="padding:50px">
+               <input type="text" class="form-control" name="from_name" placeholder="Name" required/>
+               <input type="text" class="form-control" name="from_email" placeholder="Email Address" required/>
+               <textarea rows="10" class="form-control" name="query" placeholder="Type your question here..." required></textarea>
+               <div class="form-row text-center">
+                  <div class="col-12"><button type="submit" class="btn btn-primary center-block">SEND</button></div>
+               </div>
+            </form>
          </div>
       </div>
    </div>
+   </div>
+</section>
+
 </div>
+
 {% endblock %}
