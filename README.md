@@ -59,6 +59,6 @@ I found the scrolling parallax tutorial on: https://www.w3schools.com/howto/howt
 
 I found the lightbox snippet on the Inspiration page on: https://epicbootstrap.com/snippets/lightbox-gallery
 
-I found the snippet for the YouTube video gallery on the Tips page on: http://www.prebootstrap.com/bootstrap-template/video-gallery
+I found the snippet for the gallery carousel on the Home page on: https://stackoverflow.com/questions/20007610/bootstrap-carousel-multiple-frames-at-once
 
 I found the javascript function for storing the shopping list on: http://www.marcorpsa.com/ee/t2641.html

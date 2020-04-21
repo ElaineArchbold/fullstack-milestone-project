@@ -8,12 +8,11 @@ CATEGORY_CHOICES = (
     ('communion', 'COMMUNION'),
     ('engagement', 'ENGAGEMENT'),
     ('family', 'FAMILY'),
-     ('fathersday', 'FATHERSDAY'),
+    ('fathersday', 'FATHERSDAY'),
     ('fingerprint', 'FINGERPRINT'),
-     ('mothersday', 'MOTHERSDAY'),
-      ('teacher', 'TEACHER'),
-        ('wedding', 'WEDDING'),
-)
+    ('mothersday', 'MOTHERSDAY'),
+    ('teacher', 'TEACHER'),
+    ('wedding', 'WEDDING'),)
 
 
 class Product(models.Model):

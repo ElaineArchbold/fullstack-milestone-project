@@ -57,4 +57,3 @@ def teacher(request):
 def wedding(request):
     products = Product.objects.all()
     return render(request, "wedding.html", {"products": products})
-

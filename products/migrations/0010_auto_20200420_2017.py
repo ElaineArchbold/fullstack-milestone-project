@@ -15,7 +15,7 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='product',
             name='category',
-            field=models.CharField(choices=[('baby', 'BABY'), ('christening', 'CHRISTENING'), ('communion', 'COMMUNION'), ('engagement', 'ENGAGEMENT'), ('family', 'FAMILY'), ('fathersday', 'FATHERSDAY'), ('fingerprint', 'FINGERPRINT'), ('mothersday', 'MOTHERSDAY'), ('teacher', 'TEACHER'), ('wedding', 'WEDDING')], default='', max_length=30),
+            field=models.CharField(choices=[('baby', 'BABY'), ('christening', 'CHRISTENING'), ('communion', 'COMMUNION'), ('engagement', 'ENGAGEMENT'), ('family', 'FAMILY'), ('fathersday', 'FATHERSDAY'), ('fingerprint', 'FINGERPRINT'), ('mothersday', 'MOTHERSDAY'), ('teacher', 'TEACHER'), ('wedding', 'WEDDING')], default='baby', max_length=30),
         ),
         migrations.DeleteModel(
             name='Category',

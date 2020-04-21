@@ -3,13 +3,15 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block content %}
+
+
 <div class="container-fluid background-container">
 	<!--SECTION ONE-->
 	<section id="about-me">
 		<div class="jumbotron parallaxone">
-			<div class="jumbotron jumbotron-fluid bg-dark">
+			<div class="bg-dark">
 
-				<h1 style="color:white">Welcome to Alio Prints! Lets create something beautiful!</h1>
+				<h2>Welcome to Alio Prints!</h2> <br> <p> Lets create something beautiful!</p>
 
 			</div>
 		</div>
@@ -17,49 +19,98 @@
 	<!--SECTION TWO-->
 	<section class="parallaxtwo">
 		<div class="portfolio-images">
-			<h3>Our bestsellers...</h3>
+			<h3>Some of our bestsellers...</h3>
 			<div class="photo-gallery">
-				<div class="container">
-					<div class="row photos">
+                <div class="container">
+    <div class="col-md-12">
+        <div class="well">
+            <div id="myCarousel" class="carousel slide">
+                
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-sm-3"><a href="{% url 'baby' %}"><img src="media/images/gallery1.png" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="{% url 'family' %}"><img src="media/images/gallery2.png" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="{% url 'wedding' %}"><img src="media/images/gallery3.png" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="{% url 'baby' %}"><img src="media/images/gallery4.png" alt="Image" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/item-->
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-sm-3"><a href="{% url 'family' %}" class="thumbnail"><img src="media/images/gallery5.png" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="{% url 'fingerprint' %}" class="thumbnail"><img src="media/images/gallery6.png" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="{% url 'teacher' %}" class="thumbnail"><img src="media/images/gallery7.png" alt="Image" class="img-responsive"></a>
+                            </div>
+                            <div class="col-sm-3"><a href="{% url 'fingerprint' %}" class="thumbnail"><img src="media/images/gallery8.png" alt="Image" class="img-responsive"></a>
+                            </div>
+                        </div>
+                        <!--/row-->
+                    </div>
+                   
+                </div>
+                <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
 
-						<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="media/images/classic-girl.png"
-								data-lightbox="photos"><img class="img-fluid img-thumbnail" src="media/images/classic-girl.png" alt="bedroom1"></a>
-						</div>
-						<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="media/images/classic-boy.png"
-								data-lightbox="photos"><img class="img-fluid img-thumbnail" src="media/images/classic-boy.png" alt="bedroom1"></a>
-						</div>
-						<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="media/images/wedding-fingerprint.png"
-								data-lightbox="photos"><img class="img-fluid img-thumbnail" src="media/images/wedding-fingerprint.png" alt="bedroom1"></a>
-						</div>
-						<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="media/images/owl-girl.png"
-								data-lightbox="photos"><img class="img-fluid img-thumbnail" src="media/images/owl-girl.png" alt="bedroom1"></a>
-						</div>
-						<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="media/images/owl-boy.png"
-								data-lightbox="photos"><img class="img-fluid img-thumbnail" src="media/images/owl-boy.png" alt="bedroom1"></a>
-						</div>
-						<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="media/images/family-tree.png"
-								data-lightbox="photos"><img class="img-fluid img-thumbnail" src="media/images/family-tree.png" alt="bedroom1"></a>
-						</div>
-						<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="media/images/house-rules-black.jpg"
-								data-lightbox="photos"><img class="img-fluid img-thumbnail" src="media/images/house-rules-black.jpg" alt="bedroom1"></a>
-						</div>
-						<div class="col-sm-6 col-md-4 col-lg-3 item"><a href="media/images/fingerprint-3.png"
-								data-lightbox="photos"><img class="img-fluid img-thumbnail" src="media/images/fingerprint-3.png" alt="bedroom1"></a>
-						</div>
-					</div>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+            </div>
+            <!--/myCarousel-->
+        </div>
+        <!--/well-->
+    </div>
+</div>
 				</div>
 			</div>
-		</div>
+		
 	</section>
 	<!--SECTION THREE-->
 	<section class="parallaxthree">
-		<div class="main-form">
+		
 			<div class="container-fluid">
-				<div class="col-12">
-					<h2>Get in touch!</h2>
-					<p style="text-align:center">I'd love to hear from you...</p>
-					<div class="col-8 offset-2">
-						<form id="myform" onsubmit="return sendMail(this);" method="POST" style="padding:50px">
+            	<h2>Get in touch</h2>
+					<div class="row">
+				<div class="col-6 big-form">
+				<p>Send us an email</p>
+					<div>
+						<form id="myform" onsubmit="return sendMail(this);" method="POST">
+							<input type="text" class="form-control" name="from_name" placeholder="Name" required/>
+							<input type="text" class="form-control" name="from_email" placeholder="Email Address" required/>
+							<textarea rows="10" class="form-control form-box" name="query" placeholder="Type your question here..." required></textarea>
+							<div class="form-row text-center">
+								<div class="col-12">
+									<button type="submit" class="btn btn-success center-block">SEND</button></div>
+							</div>
+						</form>
+					</div>
+				</div>
+             
+
+                  <!--Facebook iFrame-->
+                  
+            <div class="col-6 big-form">
+			<p>Follow us online</p>
+            <div id="fb-root">
+            <div class="facebook">
+			<div class="fb-page" data-href="https://www.facebook.com/alioprints" data-width="380"
+				data-hide-cover="false" data-show-facepile="false"></div>
+			</div>
+</div>
+            <div class="twitter">
+            <a href="https://twitter.com/intent/tweet?button_hashtag=alioprints&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #alioprints</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+</div>
+            <!--Small Device form-->
+   	<div class="col-12 sml-form">
+				<p>Send us an email</p>
+					<div>
+						<form id="smallform" onsubmit="return sendMail(this);" method="POST">
 							<input type="text" class="form-control form-box" name="from_name" placeholder="Name" required/>
 							<input type="text" class="form-control form-box" name="from_email" placeholder="Email Address" required/>
 							<textarea rows="10" class="form-control form-box" name="query" placeholder="Type your question here..." required></textarea>
@@ -70,10 +121,13 @@
 						</form>
 					</div>
 				</div>
+            
+
+					</div>
 			</div>
-		</div>
-	</section>
+    </section>
 
 </div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=377813928905630&autoLogAppEvents=1"></script>
 
 {% endblock %}
