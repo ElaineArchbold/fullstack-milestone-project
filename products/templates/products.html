@@ -3,32 +3,45 @@
 
 {% block content %}
 <div class="products-container">
+	<ul class="breadcrumb">
+		<li><a href="{% url 'baby' %}">Baby</a></li>
+        <li><a href="{% url 'christening' %}">Christening</a></li>
+        <li><a href="{% url 'engagement' %}">Engagement</a></li>
+        <li><a href="{% url 'family' %}">Family</a></li>
+        <li><a href="{% url 'fathersday' %}">Father Day</a></li>
+        <li><a href="{% url 'fingerprint' %}">Fingerprint Kits</a></li>
+        <li><a href="{% url 'mothersday' %}">Mothers Day</a></li>
+        <li><a href="{% url 'teacher' %}">Teacher</a></li>
+        <li><a href="{% url 'wedding' %}">Wedding</a></li>
+	</ul>
 
+	<h3>All Products</h3>
 
-<h3>All Products</h3>
+		{% for product in products %}
 
-    {% for product in products %}
+		<div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-3 display panel panel-default">
+			<div class="panel-body">
+				<div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
 
-        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-3 display panel panel-default">
-            <div class="panel-body">
-                <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ product.image }}')"></div>
+				<h3 class="caption">{{ product.name }}</h3>
+				<p class="product-description">{{ product.description }}</p>
+				<p class="price">€{{ product.price }}</p>
 
-                <h3 class="caption">{{ product.name }}</h3>
-                <p class="product-description">{{ product.description }}</p>
-                <p class="price">€{{ product.price }}</p>
-
-                <form method="post" action="{% url 'add_to_cart' product.id %}">
-                    {% csrf_token %}
-                    <div class="input-group">
-                        <input name="quantity" type="number" min="1" max="999" class="form-control"  placeholder="Quantity">
-                        <span class="input-group-btn">
+				<form method="post" action="{% url 'add_to_cart' product.id %}">
+					{% csrf_token %}
+					<div class="input-group">
+						<input name="quantity" type="number" min="1" max="999" class="form-control"  placeholder="Quantity">
+						<span class="input-group-btn">
                             <button class="btn btn-success" type="submit">Add</button>
                         </span>
-                    </div>
-                </form>
-            </div>
-        </div>
+					</div>
+				</form>
+			</div>
+		</div>
+       
 
-    {% endfor %}
- </div>
+		{% endfor %}
+	
+
+</div>
 {% endblock %}
