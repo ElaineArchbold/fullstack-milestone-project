@@ -8,7 +8,7 @@ def cart_contents(request):
     every page
     """
     cart = request.session.get('cart', {})
-
+    
     cart_items = []
     total = 0
     product_count = 0

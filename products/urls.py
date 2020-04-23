@@ -1,5 +1,5 @@
 from django.conf.urls import url, include
-from .views import all_products, baby, christening, communions, engagement, family, fathersday, fingerprint, mothersday, teacher, wedding
+from .views import all_products, baby, christening, communions, engagement, family, fathersday, fingerprint, mothersday, teacher, wedding, gallery
 
 urlpatterns = [
     url(r'^$', all_products, name='products'),
@@ -13,4 +13,5 @@ urlpatterns = [
     url(r'^mothersday', mothersday, name='mothersday'),
     url(r'^teacher', teacher, name='teacher'),
     url(r'^wedding', wedding, name='wedding'),
+    url(r'^gallery', gallery, name='gallery'),
 ]

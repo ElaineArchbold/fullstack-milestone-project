@@ -10,7 +10,7 @@
 <div class="row row-flex">
     {% for item in cart_items %}
     
-    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-display">
+    <div class="col-xs-12 col-sm-9 col-md-4 display panel panel-display">
         <div class="panel-body">
         <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
         
@@ -43,7 +43,7 @@
 <div class="col-12" style="text-align:center">
     <h3>Total</h3>
     <h3><span class="glyphicon glyphicon-euro" aria-hidden="true"></span>{{ total }}</h3>
-    <a href="{% url 'checkout' %}" class="btn btn-success" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a>
+    <a href="{% url 'checkout' %}" class="btn btn-success checkout-btn" role="button"><span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>Checkout</a>
 </div>
 </div>
 </div>

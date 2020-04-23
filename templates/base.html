@@ -35,13 +35,16 @@
                     <span class="icon-bar"></span>
                 </button>
 			<a class="navbar-brand brand-logo" href="/">Alio Prints</a>
-			<img src="/media/images/letterlogo.png" alt="" style="height:50px">
+			<a href="/"><img src="/media/images/letterlogo.png" alt="" style="height:50px"></a>
             </div>
 
 			<div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
 					{% if user.is_authenticated %}
-					<li>
+				<li>
+						<a href="{% url 'gallery' %}">Gallery</a>
+					</li>
+                    <li>
 						<div class="dropdown">
 							<a href="{% url 'products' %}" class="dropdown-toggle" data-toggle="dropdown">Shop</a>
 							<div class="dropdown-menu" style="text-align:center">

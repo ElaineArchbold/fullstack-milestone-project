@@ -21,7 +21,7 @@ from home import urls as urls_home
 from cart import urls as urls_cart
 from search import urls as urls_search
 from checkout import urls as urls_checkout
-from products.views import all_products, baby, christening, communions, engagement, family, fathersday, fingerprint, mothersday, teacher, wedding
+from products.views import all_products, baby, christening, communions, engagement, family, fathersday, fingerprint, mothersday, teacher, wedding, gallery
 from django.views import static
 from .settings import MEDIA_ROOT
 
@@ -40,6 +40,7 @@ urlpatterns = [
     url(r'^mothersday/', mothersday, name='mothersday'),
     url(r'^teacher/', teacher, name='teacher'),
     url(r'^wedding/', wedding, name='wedding'),
+    url(r'^gallery/', gallery, name='gallery'),
     url(r'^cart/', include(urls_cart)),
     url(r'^checkout/', include(urls_checkout)),
     url(r'^search/', include(urls_search)),
