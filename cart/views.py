@@ -1,4 +1,8 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
+from django.contrib import messages
+from django.conf import settings
+from django.utils import timezone
+from products.models import Product
 
 # Create your views here.
 
@@ -32,6 +36,19 @@ def adjust_cart(request, id):
         cart[id] = quantity
     else:
         cart.pop(id)
+
+    request.session['cart'] = cart
+    return redirect(reverse('view_cart'))
+
+
+def remove_from_cart(request, id):
+    """
+    Adjust the quantity of the specified product to the specified
+    amount
+    """
+    cart = request.session.get('cart', {})
+
+    cart.pop(id)
 
     request.session['cart'] = cart
     return redirect(reverse('view_cart'))

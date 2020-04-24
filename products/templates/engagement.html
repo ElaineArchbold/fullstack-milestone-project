@@ -17,7 +17,7 @@
 
                 <h3 class="caption">{{ product.name }}</h3>
                 <p class="product-description">{{ product.description }}</p>
-                <p class="price">€{{ product.price }}</p>
+                <p class="price"><i class="fa fa-eur" aria-hidden="true"></i>{{ product.price }}</p>
 
                 <form method="post" action="{% url 'add_to_cart' product.id %}">
                     {% csrf_token %}

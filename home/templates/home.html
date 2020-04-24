@@ -105,23 +105,36 @@
       <div class="container-fluid">
          <h2>Get in touch</h2>
          <div class="row">
-            <div class="col-6 big-form">
+            <div class="col-sm-12 col-md-6 col-lg-6">
                <p>Send us an email</p>
                <div>
-                  <form id="myform" onsubmit="return sendMail(this);" method="POST">
+               
+<h1>Contact</h1>
+<form role="form" action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+</form>
+{
+
+
+
+              <!--    <form id="myform" onsubmit="return sendMail(this);" method="POST">
+              
                      <input type="text" class="form-control" name="from_name" placeholder="Name" required/>
                      <input type="text" class="form-control" name="from_email" placeholder="Email Address" required/>
                      <textarea rows="10" class="form-control form-box" name="query" placeholder="Type your question here..." required></textarea>
                      <div class="form-row text-center">
                         <div class="col-12">
+                       
                            <button type="submit" class="btn btn-success center-block">SEND</button>
                         </div>
                      </div>
-                  </form>
+                  </form>-->
                </div>
             </div>
             <!--Facebook iFrame-->
-            <div class="col-6 big-form">
+            <div class="col-6 social-media">
                <p>Follow us online</p>
                <div id="fb-root">
                   <div class="facebook">
@@ -133,22 +146,7 @@
                   <a href="https://twitter.com/intent/tweet?button_hashtag=alioprints&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #alioprints</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                </div>
             </div>
-            <!--Small Device form-->
-            <div class="col-12 sml-form">
-               <p>Send us an email</p>
-               <div>
-                  <form id="smallform" onsubmit="return sendMail(this);" method="POST">
-                     <input type="text" class="form-control form-box" name="from_name" placeholder="Name" required/>
-                     <input type="text" class="form-control form-box" name="from_email" placeholder="Email Address" required/>
-                     <textarea rows="10" class="form-control form-box" name="query" placeholder="Type your question here..." required></textarea>
-                     <div class="form-row text-center">
-                        <div class="col-12">
-                           <button type="submit" class="btn btn-success center-block">SEND</button>
-                        </div>
-                     </div>
-                  </form>
-               </div>
-            </div>
+      
          </div>
       </div>
    </section>
