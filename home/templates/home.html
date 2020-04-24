@@ -108,25 +108,25 @@
             <div class="col-sm-12 col-md-6 col-lg-6">
                <p>Send us an email</p>
                <div>
-               
-<h1>Contact</h1>
-<form role="form" action="" method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Submit</button>
-</form>
-{
+                  <h1>Contact Us</h1>
+    <form id="myform" onsubmit="return sendMail(this);" method="POST" style="padding:50px">
+               <input type="text" class="form-control" name="from_name" placeholder="Name" required/>
+               <input type="text" class="form-control" name="from_email" placeholder="Email Address" required/>
+               <textarea rows="10" class="form-control" name="query" placeholder="Type your question here..." required></textarea>
+               <div class="form-row text-center">
+                  <div class="col-12"><button type="submit" class="btn btn-primary center-block">SEND</button></div>
+               </div>
+            </form>
 
 
 
-              <!--    <form id="myform" onsubmit="return sendMail(this);" method="POST">
-              
+                  <!--<form id="myform" role="form" method="post" action="#">
+                     {% csrf_token %}
                      <input type="text" class="form-control" name="from_name" placeholder="Name" required/>
                      <input type="text" class="form-control" name="from_email" placeholder="Email Address" required/>
                      <textarea rows="10" class="form-control form-box" name="query" placeholder="Type your question here..." required></textarea>
                      <div class="form-row text-center">
                         <div class="col-12">
-                       
                            <button type="submit" class="btn btn-success center-block">SEND</button>
                         </div>
                      </div>
@@ -146,10 +146,22 @@
                   <a href="https://twitter.com/intent/tweet?button_hashtag=alioprints&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #alioprints</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                </div>
             </div>
-      
          </div>
       </div>
    </section>
 </div>
+<script>
+$(document).ready(function() {
+	$('#myCarousel').carousel({
+	interval: 2000
+	})
+    
+    $('#myCarousel').on('slid.bs.carousel', function() {
+    	//alert("slid");
+	});
+    
+    
+});</script>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=377813928905630&autoLogAppEvents=1"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 {% endblock %}

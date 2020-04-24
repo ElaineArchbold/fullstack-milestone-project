@@ -38,18 +38,18 @@
     <p><span> <i class="fa fa-eur" aria-hidden="true"></i></span>{{ total }}</p>
 </div>
 
-<form role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
+<form class="checkout-form" role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
     <legend><h1> Payment Details</h1></legend>
 <div class="checkout-form">
     <div id="credit-card-errors" style="display: none;">
         <div class="alert-message block-message error" id="stripe-error-message"></div>
     </div>
 
-    <div class="form-group col-md-6">
+    <div class="form-group col-md-6 checkout-form">
         {{ order_form | as_bootstrap }}
     </div>
 
-    <div class="form-group col-md-6">
+    <div class="form-group col-md-6 checkout-form">
         {{ payment_form | as_bootstrap }}
     </div>
 

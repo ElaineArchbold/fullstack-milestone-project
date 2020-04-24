@@ -21,7 +21,7 @@ from home import urls as urls_home
 from cart import urls as urls_cart
 from search import urls as urls_search
 from checkout import urls as urls_checkout
-from products.views import all_products, baby, christening, communions, engagement, family, fathersday, fingerprint, mothersday, teacher, wedding, gallery
+from products.views import all_products
 from django.views import static
 from .settings import MEDIA_ROOT
 
@@ -30,19 +30,9 @@ urlpatterns = [
     url(r'^', include(urls_home)),
     url(r'^accounts/', include(urls_accounts)),
     url(r'^products/', include(urls_products)),
-    url(r'^baby/', baby, name='baby'),
-    url(r'^christening/', christening, name='christening'),
-    url(r'^communions/', communions, name='communions'),
-    url(r'^engagement/', engagement, name='engagement'),
-    url(r'^family/', family, name='family'),
-    url(r'^fathersday/', fathersday, name='fathersday'),
-    url(r'^fingerprint/', fingerprint, name='fingerprint'),
-    url(r'^mothersday/', mothersday, name='mothersday'),
-    url(r'^teacher/', teacher, name='teacher'),
-    url(r'^wedding/', wedding, name='wedding'),
-    url(r'^gallery/', gallery, name='gallery'),
     url(r'^cart/', include(urls_cart)),
     url(r'^checkout/', include(urls_checkout)),
     url(r'^search/', include(urls_search)),
-    url(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT})
+    url(r'^media/(?P<path>.*)$', static.serve, {'document_root': MEDIA_ROOT}),
+
 ]

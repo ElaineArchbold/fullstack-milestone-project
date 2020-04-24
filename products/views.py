@@ -33,18 +33,12 @@ def family(request):
     products = Product.objects.all()
     return render(request, "family.html", {"products": products})
 
-
-def fathersday(request):
-    products = Product.objects.all()
-    return render(request, "fathersday.html", {"products": products})
-
-
 def fingerprint(request):
     products = Product.objects.all()
     return render(request, "fingerprint.html", {"products": products})
 
 
-def mothersday(request):
+def mothersdayfathersday(request):
     products = Product.objects.all()
     return render(request, "mothersday.html", {"products": products})
 

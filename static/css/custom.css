@@ -249,10 +249,6 @@ a:hover {
 	padding: 14px;
 }
 
-.price {
-	font-size: 2em;
-}
-
 .btn-success:focus, .btn-success.focus {
     color: #ffffff;
     background-color: #434343;
@@ -457,16 +453,21 @@ a:hover {
 /*----------------------------------------------------------------PRODUCTS PAGE*/
 
 .product {
-	background-size: contain;
-	background-position: center center;
-	background-repeat: no-repeat;
-	height: 150px;
-	margin: 0 auto;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 150px;
+    margin: 0;
+    padding: 0;
 }
 
-caption p {
+.caption p {
 	word-wrap: break-word;
 }
+.caption{
+margin-bottom:12px; 
+margin-top:0; 
+padding-top:0 }
 
 .row.row-flex {
 	display: flex;
@@ -476,16 +477,18 @@ caption p {
 
 .panel-default {
 	border-color: transparent;
-	padding: 0 10px;
+	padding: 0 2px;
+    max-height: 400px;
 }
 
 .panel-body {
 	height: 100%;
 	border: 1px solid #e8b3b3;
-	border-radius: 15px;
+	border-radius: 5px;
 	background-color: #fafafa;
 	text-align: center;
 }
+
 
 .panel {
 	margin-bottom: 20px;
@@ -497,7 +500,22 @@ caption p {
 }
 
 .product-description {
-	min-height: 40px;
+    height: 80px;
+    overflow: scroll;
+    overflow-y: scroll;
+    margin-bottom: 0;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+  max-height: 60px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
 }
 
 .products-container {
@@ -512,15 +530,15 @@ caption p {
 
 .products-container h3 {
 	text-align: center;
-	padding-bottom: 2px;
-	padding-top: 20px;
 }
 
 .input-group {
 	position: sticky;
 }
 
-
+.price {
+	font-size: 1.5em;
+}
 /*----------------------------------------------------------------GALLERY PAGE*/
 
 .gallery-container {
@@ -583,6 +601,7 @@ caption p {
 
 .checkout-form {
 	background-color: #fafafa;
+    padding-bottom: 12px;
 }
 
 .input-group-addon {

@@ -8,9 +8,8 @@ CATEGORY_CHOICES = (
     ('communion', 'COMMUNION'),
     ('engagement', 'ENGAGEMENT'),
     ('family', 'FAMILY'),
-    ('fathersday', 'FATHERSDAY'),
     ('fingerprint', 'FINGERPRINT'),
-    ('mothersday', 'MOTHERSDAY'),
+    ('mothersdayfathersday', 'MOTHERSDAY/FATHERSDAY'),
     ('teacher', 'TEACHER'),
     ('wedding', 'WEDDING'),)
 
