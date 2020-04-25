@@ -5,8 +5,8 @@ from django.contrib.auth.models import User
 from accounts.forms import UserLoginForm, UserRegistrationForm
 
 
-def index(request):
-    """Return the index.html file"""
+def home(request):
+    """Return the home.html file"""
     return render(request,  'home.html')
 
 
