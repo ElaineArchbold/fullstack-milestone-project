@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<div class="container-fluid background-container">
+
+   <!--CONTACT FORM-->
+   <section class="contact">
+      <div class="container-fluid">
+         <h2>Get in touch</h2>
+         <div class="row">
+            <div class="col-12">
+               <p>Send us a message</p>
+               <div>
+       
+    <form id="myform" onsubmit="return sendMail(this);" method="POST" style="padding:12px">
+   
+               <input type="text" class="form-control" name="from_name" placeholder="Name" required/>
+               <input type="text" class="form-control" name="from_email" placeholder="Email Address" required/>
+               <textarea rows="10" class="form-control" name="query" placeholder="Type your question here..." required></textarea>
+               <div class="form-row text-center">
+                  <div class="col-12"><button type="submit" class="btn btn-success center-block">SEND</button></div>
+               </div>
+            </form>
+               </div>
+            </div>
+           
+         </div>
+      </div>
+   </section>
+</div>
+<script>
+var myform = $("form#myform");
+myform.submit(function (event) {
+  event.preventDefault();
+
+  // Change to your service ID, or keep using the default service
+  var service_id = "default_service";
+  var template_id = "alio_prints";
+
+  myform.find("button").text("Sending...");
+  emailjs.sendForm(service_id, template_id, myform[0]).then(
+    function () {
+      alert("Your message was sent!");
+      myform.find("button").text("Send");
+    },
+    function (err) {
+      alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+      myform.find("button").text("Send");
+    }
+  );
+  return false;
+});
+
+</script>
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+{% endblock %}

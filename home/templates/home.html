@@ -9,20 +9,45 @@
          <div class="bg-dark">
             <h2>Welcome to Alio Prints!</h2>
             <br> 
-            <p> Lets create something beautiful!</p>
+            <p> Let's create something beautiful!</p>
          </div>
       </div>
    </section>
    <!--SECTION TWO-->
    <section class="parallaxtwo">
-      <h3>Some of our bestsellers...</h3>
-      <div class="photo-gallery">
-         <div class="container">
+
+<div class="col-6 offset-6">
+<h2>What we do...</h2>
+<p>We create personalised prints for all occasions! <br> New additions, birthdays, anniversarys and everything in between!</p>
+<div style="float:right">
+<a target="_blank" href="{% url 'gallery' %}"><button class="btn btn-success">View Gallery</button></a>
+</div>
+</div>
+
+</section>
+ <!--SECTION THREE-->
+   <section>
+<div class="parallaxthree">
+<div class="col-sm-8 col-md-12 col-lg-12">
+<h2>How do we do it?</h2>
+<p>Order your design with order details.<br> We'll send you a proof and once signed off,<br> it will be on the way to you!</p>
+<div style="float:left">
+<a target="_blank" href="{% url 'contact' %}"><button class="btn btn-success">Get in Touch</button></a>
+</div>
+</div>
+</div>
+</section>
+ <!--SECTION FOUR-->
+<section class="parallaxfour">
+   <div>
+   <h2>Some of our bestsellers...</h2>
+   
+         <div class="container photo-gallery">
             <div class="col-md-12">
                <div class="well">
                   <div id="myCarousel" class="carousel slide">
                      <!-- CAROUSEL FOR LARGE SCREENS -->
-                     <div class="carousel-inner portfolio-images">
+                    <div class="carousel-inner portfolio-images">
                         <div class="item active">
                            <div class="row">
                               <div class="col-sm-3"><a href="{% url 'baby' %}"><img src="media/images/gallery1.png" alt="Image" class="img-responsive"></a>
@@ -34,10 +59,10 @@
                               <div class="col-sm-3"><a href="{% url 'baby' %}"><img src="media/images/gallery4.png" alt="Image" class="img-responsive"></a>
                               </div>
                            </div>
-                           <!--/row-->
+            
                         </div>
                         <!--/item-->
-                        <div class="item">
+                       <div class="item">
                            <div class="row">
                               <div class="col-sm-3"><a href="{% url 'family' %}" class="thumbnail"><img src="media/images/gallery5.png" alt="Image" class="img-responsive"></a>
                               </div>
@@ -48,20 +73,22 @@
                               <div class="col-sm-3"><a href="{% url 'fingerprint' %}" class="thumbnail"><img src="media/images/gallery8.png" alt="Image" class="img-responsive"></a>
                               </div>
                            </div>
-                           <!--/row-->
+                         
                         </div>
                      </div>
-                     <!--/carousel-inner--> <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+                     <!--/carousel-inner--> 
+               <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
                      <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
                   </div>
-                  <!--/myCarousel-->
+                
                </div>
-               <!--/well-->
+        
             </div>
          </div>
       </div>
+
       <!--CAROUSEL FOR SMALL SCREENS-->
-      <div class="container sml-carousel">
+ <div class="container sml-carousel">
          <div class="row">
             <div class="col-8 offset-2">
                <div class="carousel slide carousel" id="carouselcontrols" data-ride="carousel">
@@ -94,73 +121,13 @@
             </div>
          </div>
       </div>
-      <div class="gallery">
-         <a href="{% url 'gallery' %}">
-            <p>View Gallery</p>
-         </a>
-      </div>
+    
+
    </section>
-   <!--SECTION THREE-->
-   <section class="parallaxthree">
-      <div class="container-fluid">
-         <h2>Get in touch</h2>
-         <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-6">
-               <p>Send us an email</p>
-               <div>
-       
-    <form id="myform" onsubmit="return sendMail(this);" method="POST" style="padding:50px">
    
-               <input type="text" class="form-control" name="from_name" placeholder="Name" required/>
-               <input type="text" class="form-control" name="from_email" placeholder="Email Address" required/>
-               <textarea rows="10" class="form-control" name="query" placeholder="Type your question here..." required></textarea>
-               <div class="form-row text-center">
-                  <div class="col-12"><button type="submit" class="btn btn-success center-block">SEND</button></div>
-               </div>
-            </form>
-               </div>
-            </div>
-            <!--Facebook iFrame-->
-            <div class="col-6 social-media">
-               <p>Follow us online</p>
-               <div id="fb-root">
-                  <div class="facebook">
-                     <div class="fb-page" data-href="https://www.facebook.com/alioprints" data-width="380"
-                        data-hide-cover="false" data-show-facepile="false"></div>
-                  </div>
-               </div>
-               <div class="twitter">
-                  <a href="https://twitter.com/intent/tweet?button_hashtag=alioprints&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #alioprints</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
+
 </div>
-<script>
-var myform = $("form#myform");
-myform.submit(function (event) {
-  event.preventDefault();
 
-  // Change to your service ID, or keep using the default service
-  var service_id = "default_service";
-  var template_id = "alio_prints";
 
-  myform.find("button").text("Sending...");
-  emailjs.sendForm(service_id, template_id, myform[0]).then(
-    function () {
-      alert("Your message was sent!");
-      myform.find("button").text("Send");
-    },
-    function (err) {
-      alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-      myform.find("button").text("Send");
-    }
-  );
-  return false;
-});
 
-</script>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0&appId=377813928905630&autoLogAppEvents=1"></script>
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 {% endblock %}
