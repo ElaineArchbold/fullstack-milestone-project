@@ -7,7 +7,7 @@ from accounts.forms import UserLoginForm, UserRegistrationForm
 
 def home(request):
     """Return the home.html file"""
-    return render(request,  'homehtml')
+    return render(request,  'home.html')
 
 
 @login_required

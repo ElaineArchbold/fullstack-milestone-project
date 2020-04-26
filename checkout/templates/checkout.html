@@ -1,66 +1,63 @@
 <!DOCTYPE html>
+<title>Checkout</title>
 {% extends "base.html" %}
 {% load static from staticfiles %}
 {% load bootstrap_tags %}
-
 {% block head_js %}
 <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 <script type="text/javascript">
-    //<![CDATA[
-        Stripe.publishableKey = '{{ publishable }}';
-    //]]>
+   //<![CDATA[
+       Stripe.publishableKey = '{{ publishable }}';
+   //]]>
 </script>
 <script type="text/javascript" src="{% static 'js/stripe.js' %}"></script>
 {% endblock %}
-
 {% block content %}
 <div class="container-fluid cart">
-<h1>Checkout</h1>
-<div class="col-12">
-<div class="row row-flex">
-    {% for item in cart_items %}
-        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
+   <h1>Checkout</h1>
+   <p>Enter the information you would like on your print in the 'Print Details' field in the form below.</p>
+    <p>As soon as we process your order, we will add these details and send you a proof.</p>
+    <p>When you have received and approved it, we will have it ready for shipment within 7 working days!</p>
+   <div class="col-12">
+      <div class="row row-flex">
+         {% for item in cart_items %}
+         <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 col-md-4 display panel panel-default">
             <div class="panel-body">
-                <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
-
-                <div class="caption">
-                    <h3>{{ item.product.name }}</h3>
-                    <p class="product-description">{{ item.product.description }}</p>
-                    <p>{{ item.quantity }}</p>
-                    <p><i class="fa fa-eur" aria-hidden="true"></i>{{ item.product.price }}</p>
-                </div>
+               <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
+               <div class="caption">
+                  <h3>{{ item.product.name }}</h3>
+                  <p class="product-description">{{ item.product.description }}</p>
+                  <p>{{ item.quantity }}</p>
+                  <p><i class="fa fa-eur" aria-hidden="true"></i>{{ item.product.price }}</p>
+               </div>
             </div>
-        </div>
-    {% endfor %}
-</div>
-<div class="row checkout-total">
-    <p>Total:</p>
-    <p><span> <i class="fa fa-eur" aria-hidden="true"></i></span>{{ total }}</p>
-</div>
-
-<form class="checkout-form" role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
-    <legend><h1> Payment Details</h1></legend>
-<div class="checkout-form">
-    <div id="credit-card-errors" style="display: none;">
-        <div class="alert-message block-message error" id="stripe-error-message"></div>
-    </div>
-
-    <div class="form-group col-md-6 checkout-form">
-        {{ order_form | as_bootstrap }}
-    </div>
-
-    <div class="form-group col-md-6 checkout-form">
-        {{ payment_form | as_bootstrap }}
-    </div>
-
-    {% csrf_token %}
-    <div class="form-group col-md-12">
-        <input class=" btn btn-success" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
-    </div>
-    </div>
-</form>
-
-
-</div>
+         </div>
+         {% endfor %}
+      </div>
+      <div class="row checkout-total">
+         <p>Total:</p>
+         <p><span> <i class="fa fa-eur" aria-hidden="true"></i></span>{{ total }}</p>
+      </div>
+      <form class="checkout-form" role="form" method="post" id="payment-form" action="{% url 'checkout' %}">
+         <legend>
+            <h1> Payment Details</h1>
+         </legend>
+         <div class="checkout-form">
+            <div id="credit-card-errors" style="display: none;">
+               <div class="alert-message block-message error" id="stripe-error-message"></div>
+            </div>
+            <div class="form-group col-md-6 checkout-form">
+               {{ order_form | as_bootstrap }}
+            </div>
+            <div class="form-group col-md-6 checkout-form">
+               {{ payment_form | as_bootstrap }}
+            </div>
+            {% csrf_token %}
+            <div class="form-group col-md-12">
+               <input class=" btn btn-success" id="submit_payment_btn" name="commit" type="submit" value="Submit Payment">
+            </div>
+         </div>
+      </form>
+   </div>
 </div>
 {% endblock %}

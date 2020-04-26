@@ -1,60 +1,52 @@
 <!DOCTYPE html>
+<title>Cart</title>
 {% extends 'base.html' %}
 {% load static from staticfiles %}
 {% load bootstrap_tags %}
-
 {% block content %}
 <div class="container-fluid cart">
-<h1>My Cart</h1>
-<div class="col-12">
-<div class="row row-flex">
-    {% for item in cart_items %}
-    
-    <div class="col-xs-12 col-sm-9 col-md-4 display panel panel-display">
-        <div class="panel-body">
-        <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
-        
-        <div class="caption">
-            <h3>{{ item.product.name }}</h3>
-            <p class="product-description">{{ item.product.description }}</p>
-            <p><i class="fa fa-eur" aria-hidden="true"></i> {{ item.product.price }}</p>
-
-           <div class="col-12">
-       
-                
-                <form class="form-inline row" method="post" action="{% url 'adjust_cart' item.id %}">
-                    {% csrf_token %}
-                    <div class="form-group">
-                        <label for="exampleInputAmount" class="sr-only">New Qty</label>
-                        <div class="input-group">
-                            <div class="input-group-addon">{{item.quantity}}</div>
-                            <input name="quantity" type="number" min="0" max="999" class="form-control">
-                            <div class="input-group-addon amm"><button class="btn btn-ammend" type="submit"><span><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span> Ammend</button></div>
+   <h1>My Cart</h1>
+   <div class="col-12">
+      <div class="row row-flex">
+         {% for item in cart_items %}
+         <div class="col-xs-12 col-sm-9 col-md-4 display panel panel-display">
+            <div class="panel-body">
+               <div class="product" style="background-image: url('{{ MEDIA_URL }}{{ item.product.image }}')"></div>
+               <div class="caption">
+                  <h3>{{ item.product.name }}</h3>
+                  <p class="product-description">{{ item.product.description }}</p>
+                  <p><i class="fa fa-eur" aria-hidden="true"></i> {{ item.product.price }}</p>
+                  <div class="col-12">
+                     <form class="form-inline row" method="post" action="{% url 'adjust_cart' item.id %}">
+                        {% csrf_token %}
+                        <div class="form-group">
+                           <label for="exampleInputAmount" class="sr-only">New Qty</label>
+                           <div class="input-group">
+                              <div class="input-group-addon">{{item.quantity}}</div>
+                              <input name="quantity" type="number" min="0" max="999" class="form-control">
+                              <div class="input-group-addon amm"><button class="btn btn-ammend" type="submit"><span><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span> Ammend</button></div>
+                           </div>
                         </div>
-                    </div>
-                    
-                </form>
-       <form class="form-inline row" method="post" action="{% url 'remove_from_cart' item.id %}">
-                    {% csrf_token %}
-                    <div class="form-group">
-                        <div class="input-group">
-        
-                            <div><button class="btn btn-remove" type="submit"><span><i class="fa fa-trash-o" aria-hidden="true"></i></span> Remove</button></div>
+                     </form>
+                     <form class="form-inline row" method="post" action="{% url 'remove_from_cart' item.id %}">
+                        {% csrf_token %}
+                        <div class="form-group">
+                           <div class="input-group">
+                              <div><button class="btn btn-remove" type="submit"><span><i class="fa fa-trash-o" aria-hidden="true"></i></span> Remove</button></div>
+                           </div>
                         </div>
-                    </div>
-                    
-                </form>
+                     </form>
+                  </div>
+               </div>
             </div>
-        </div>
-        </div>
-    </div>
-    {% endfor %}
-</div>
-<div class="col-12" style="text-align:center">
-    <h3>Total</h3>
-    <h3><span><i class="fa fa-eur" aria-hidden="true"></i></span>{{ total }}</h3>
-    <a href="{% url 'checkout' %}" class="btn btn-success checkout-btn" role="button"><span><i class="fa fa-credit-card" aria-hidden="true"></i></span> Checkout</a>
-</div>
-</div>
+         </div>
+         {% endfor %}
+      </div>
+      <div class="col-12" style="text-align:center">
+         <h3>Total</h3>
+         <h3><span><i class="fa fa-eur" aria-hidden="true"></i></span>{{ total }}</h3>
+         <a href="{% url 'checkout' %}" class="btn btn-success checkout-btn" role="button"><span><i class="fa fa-credit-card" aria-hidden="true"></i></span> Checkout</a>
+      </div>
+   </div>
 </div>
 {% endblock %}

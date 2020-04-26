@@ -24,9 +24,9 @@ def communions(request):
     return render(request, "communions.html", {"products": products})
 
 
-def engagement(request):
+def engagement_anniversary(request):
     products = Product.objects.all()
-    return render(request, "engagement.html", {"products": products})
+    return render(request, "engagement-anniversary.html", {"products": products})
 
 
 def family(request):

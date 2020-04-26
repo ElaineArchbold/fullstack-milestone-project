@@ -345,7 +345,7 @@ font-size: 2vw;
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: 50% 50%;
-     height:400px;
+    height:500px;
     padding-top:40px;
     padding-left:15px
 
@@ -357,6 +357,12 @@ font-size: 2vw;
 
 .parallaxthree p{
 font-size: 2vw;
+}
+
+.parallaxthree i {
+font-size:4vw; 
+padding: 18px;
+color:#e8b3b3;
 }
 
 .parallaxfour {
@@ -620,6 +626,7 @@ padding-top:0 }
 .checkout-form {
 	background-color: #fafafa;
     padding-bottom: 12px;
+    padding-top: 20px
 }
 
 .input-group-addon {
@@ -814,10 +821,11 @@ footer {
 	}
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (max-width: 991px) and (min-width: 320px){
 .parallaxthree {
-    height: 200px;
-    padding-top: 15px;}
+    height: 354px;
+    padding-top: 15px;
+    text-align: center;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {

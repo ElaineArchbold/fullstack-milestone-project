@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<title>Home</title>
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% block content %}
@@ -15,80 +16,72 @@
    </section>
    <!--SECTION TWO-->
    <section class="parallaxtwo">
-
-<div class="col-6 offset-6">
-<h2>What we do...</h2>
-<p>We create personalised prints for all occasions! <br> New additions, birthdays, anniversarys and everything in between!</p>
-<div style="float:right">
-<a target="_blank" href="{% url 'gallery' %}"><button class="btn btn-success">View Gallery</button></a>
-</div>
-</div>
-
-</section>
- <!--SECTION THREE-->
+      <div class="col-6 offset-6">
+         <h2>What we do...</h2>
+         <p>We create personalised prints for all occasions! <br> New additions, birthdays, anniversarys and everything in between!</p>
+         <div style="float:right">
+            <a target="_blank" href="{% url 'gallery' %}"><button class="btn btn-success">View Gallery</button></a>
+         </div>
+      </div>
+   </section>
+   <!--SECTION THREE-->
    <section>
-<div class="parallaxthree">
-<div class="col-sm-8 col-md-12 col-lg-12">
-<h2>How do we do it?</h2>
-<p>Order your design with order details.<br> We'll send you a proof and once signed off,<br> it will be on the way to you!</p>
-<div style="float:left">
-<a target="_blank" href="{% url 'contact' %}"><button class="btn btn-success">Get in Touch</button></a>
-</div>
-</div>
-</div>
-</section>
- <!--SECTION FOUR-->
-<section class="parallaxfour">
-   <div>
-   <h2>Some of our bestsellers...</h2>
-   
+      <div class="parallaxthree">
+         <div class="col-sm-8 col-md-12 col-lg-12">
+            <h2>How do we do it?</h2>
+            <p><i class="fa fa-cart-plus" aria-hidden="true"></i> Choose your favourite prints and add to cart.<br> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Add the information you would like in your print to 'print details' in the checkout form. <br><i class="fa fa-paper-plane-o" aria-hidden="true"></i> Once your proof is signed off, your personalised print will be shipped within 7 working days!!</p>
+            <div style="float:left">
+               <a target="_blank" href="{% url 'contact' %}"><button class="btn btn-success">Get in Touch</button></a>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!--SECTION FOUR-->
+   <section class="parallaxfour">
+      <div>
+         <h2>Some of our bestsellers...</h2>
          <div class="container photo-gallery">
             <div class="col-md-12">
                <div class="well">
                   <div id="myCarousel" class="carousel slide">
                      <!-- CAROUSEL FOR LARGE SCREENS -->
-                    <div class="carousel-inner portfolio-images">
+                     <div class="carousel-inner portfolio-images">
                         <div class="item active">
                            <div class="row">
-                              <div class="col-sm-3"><a href="{% url 'baby' %}"><img src="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/gallery1.png" alt="Image" class="img-responsive"></a>
+                              <div class="col-sm-3"><a href="{#}"><img src="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/gallery1.png" alt="Image" class="img-responsive"></a>
                               </div>
-                              <div class="col-sm-3"><a href="{% url 'family' %}"><img src="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/gallery2.png" alt="Image" class="img-responsive"></a>
+                              <div class="col-sm-3"><a href="{#}"><img src="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/gallery2.png" alt="Gallery2" class="img-responsive"></a>
                               </div>
-                              <div class="col-sm-3"><a href="{% url 'wedding' %}"><img src="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/gallery3.png" alt="Image" class="img-responsive"></a>
+                              <div class="col-sm-3"><a href="{#}"><img src="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/gallery3.png" alt="Image" class="img-responsive"></a>
                               </div>
-                              <div class="col-sm-3"><a href="{% url 'baby' %}"><img src="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/gallery4.png" alt="Image" class="img-responsive"></a>
+                              <div class="col-sm-3"><a href="{#}"><img src="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/gallery4.png" alt="Image" class="img-responsive"></a>
                               </div>
                            </div>
-            
                         </div>
                         <!--/item-->
-                       <div class="item">
+                        <div class="item">
                            <div class="row">
-                              <div class="col-sm-3"><a href="{% url 'family' %}" class="thumbnail"><img src="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/gallery5.png" alt="Image" class="img-responsive"></a>
+                              <div class="col-sm-3"><a href="{#}" class="thumbnail"><img src="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/gallery5.png" alt="Image" class="img-responsive"></a>
                               </div>
-                              <div class="col-sm-3"><a href="{% url 'fingerprint' %}" class="thumbnail"><img src="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/gallery6.png" alt="Image" class="img-responsive"></a>
+                              <div class="col-sm-3"><a href="{#}" class="thumbnail"><img src="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/gallery6.png" alt="Image" class="img-responsive"></a>
                               </div>
-                              <div class="col-sm-3"><a href="{% url 'teacher' %}" class="thumbnail"><img src="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/gallery7.png" alt="Image" class="img-responsive"></a>
+                              <div class="col-sm-3"><a href="{#}" class="thumbnail"><img src="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/gallery7.png" alt="Image" class="img-responsive"></a>
                               </div>
-                              <div class="col-sm-3"><a href="{% url 'fingerprint' %}" class="thumbnail"><img src="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/gallery8.png" alt="Image" class="img-responsive"></a>
+                              <div class="col-sm-3"><a href="{#}" class="thumbnail"><img src="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/gallery8.png" alt="Image" class="img-responsive"></a>
                               </div>
                            </div>
-                         
                         </div>
                      </div>
                      <!--/carousel-inner--> 
-               <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+                     <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
                      <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
                   </div>
-                
                </div>
-        
             </div>
          </div>
       </div>
-
       <!--CAROUSEL FOR SMALL SCREENS-->
- <div class="container sml-carousel">
+      <div class="container sml-carousel">
          <div class="row">
             <div class="col-8 offset-2">
                <div class="carousel slide carousel" id="carouselcontrols" data-ride="carousel">
@@ -121,13 +114,6 @@
             </div>
          </div>
       </div>
-    
-
    </section>
-   
-
 </div>
-
-
-
 {% endblock %}

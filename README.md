@@ -61,4 +61,4 @@ I found the lightbox snippet on the Inspiration page on: https://epicbootstrap.c
 
 I found the snippet for the gallery carousel on the Home page on: https://stackoverflow.com/questions/20007610/bootstrap-carousel-multiple-frames-at-once
 
-I found the javascript function for storing the shopping list on: http://www.marcorpsa.com/ee/t2641.html
+I found the javascript function for storing the shopping list on: https://www.marcorpsa.com/ee/t2641.html

@@ -6,7 +6,7 @@ CATEGORY_CHOICES = (
     ('baby', 'BABY'),
     ('christening', 'CHRISTENING'),
     ('communion', 'COMMUNION'),
-    ('engagement', 'ENGAGEMENT'),
+    ('engagement-anniversary', 'ENGAGEMENT-ANNIVERSARY'),
     ('family', 'FAMILY'),
     ('fingerprint', 'FINGERPRINT'),
     ('mothersdayfathersday', 'MOTHERSDAY/FATHERSDAY'),
