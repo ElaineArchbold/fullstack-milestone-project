@@ -4,12 +4,6 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from accounts.forms import UserLoginForm, UserRegistrationForm
 
-
-def home(request):
-    """Return the home.html file"""
-    return render(request,  'home.html')
-
-
 @login_required
 def logout(request):
     """Log the user out"""

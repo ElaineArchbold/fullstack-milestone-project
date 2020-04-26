@@ -7,4 +7,3 @@ urlpatterns = [
     url(r'^contact', contact, name='contact'),
 
 ]
-
