@@ -13,6 +13,7 @@
       <li><a href="{% url 'teacher' %}">Teacher</a></li>
       <li><a href="{% url 'wedding' %}">Wedding</a></li>
    </ul>
+   <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
    <h3>All Products</h3>
    {% for product in products %}
    <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-3 display panel panel-default">
@@ -32,6 +33,30 @@
          </form>
       </div>
    </div>
+   
    {% endfor %}
+
 </div>
+<script>
+//SCROLL TO TOP BUTTON
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
 {% endblock %}

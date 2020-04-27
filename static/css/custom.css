@@ -200,6 +200,10 @@ a:hover {
 	border-color: #e8b3b3;
 }
 
+.btn-success .a {
+	color: #ffffff;
+}
+
 .btn-success:hover {
 	color: #e8b3b3;
 	background-color: #fafafa;
@@ -261,6 +265,33 @@ a:hover {
 	border-color: #434343;
 }
 
+.btn-login {
+    color: #ffffff;
+    background-color: #e8b3b3;
+    border-color: #e8b3b3;
+    padding: 17px;
+    font-size: 1.5vw; }
+
+.btn-login:hover {
+    color: #e8b3b3;
+    background-color: #ffffff;
+    border-color: #e8b3b3;
+    padding: 17px;
+    font-size: 1.5vw; }
+
+.btn-register {
+    color: #ffffff;
+    background-color:#434343;
+    border-color: #434343;
+    padding: 17px;
+    font-size: 1.5vw; }
+
+.btn-register:hover {
+    color: #434343;
+    background-color:#ffffff;
+    border-color: #434343;
+    padding: 17px;
+    font-size: 1.5vw; }
 
 /*----------------------------------------------------------------HOME PAGE*/
 
@@ -563,6 +594,25 @@ a:hover {
 	font-size: 1.5em;
 }
 
+#myBtn {
+    display: block;
+    position: fixed;
+    bottom: 59px;
+    right: 15px;
+    z-index: 99;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: #e8b3b3;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #434343;
+}
 
 /*----------------------------------------------------------------GALLERY PAGE*/
 
