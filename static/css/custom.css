@@ -1030,3 +1030,13 @@ footer {
 		font-size: 5vw;
 	}
 }
+
+@media (min-width: 320px) and (max-width: 767px) {
+.btn-login {
+    font-size: 4vw;
+}}
+
+@media (min-width: 320px) and (max-width: 767px) {
+.btn-register {
+    font-size: 4vw;
+}}
