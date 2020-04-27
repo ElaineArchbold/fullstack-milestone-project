@@ -44,6 +44,8 @@ def checkout(request):
                 )
             except stripe.error.CardError:
                 messages.error(request, "Your card was declined!")
+            except Exception:
+                messages.error(request, "Your payment couldn't go through!")
 
             if customer.paid:
                 messages.error(request, "You have successfully paid! You will receive a confirmation email shortly")

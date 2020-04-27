@@ -4,14 +4,17 @@
 {% block content %}
 <div class="products-container">
   <ul class="breadcrumb">
-      <li><a href="{% url 'baby' %}">Baby</a></li>
-      <li><a href="{% url 'christening' %}">Christening</a></li>
-      <li><a href="{% url 'engagement-anniversary' %}">Engagement/Anniversary</a></li>
-      <li><a href="{% url 'family' %}">Family</a></li>
-      <li><a href="{% url 'fingerprint' %}">Fingerprint Kits</a></li>
-      <li><a href="{% url 'mothersdayfathersday' %}">Mothers Day/Father Day</a></li>
-      <li><a href="{% url 'teacher' %}">Teacher</a></li>
-      <li><a href="{% url 'wedding' %}">Wedding</a></li>
+    <li><a href="{% url 'specific_category' category='Anniversary' %}">Anniversary</a></li>
+      <li><a href="{% url 'specific_category' category='Baby' %}">Baby</a></li>
+      <li><a href="{% url 'specific_category' category='Christening' %}">Christening</a></li>
+      <li><a href="{% url 'specific_category' category='Communion' %}">Communion</a></li>
+      <li><a href="{% url 'specific_category' category='Engagement' %}">Engagement</a></li>
+      <li><a href="{% url 'specific_category' category='Family' %}">Family</a></li>
+      <li><a href="{% url 'specific_category' category='Fathers' %}">Fathers Day</a></li>
+      <li><a href="{% url 'specific_category' category='Fingerprint' %}">Fingerprint Kits</a></li>
+      <li><a href="{% url 'specific_category' category='Mothers' %}">Mothers Day</a></li>
+      <li><a href="{% url 'specific_category' category='Teacher' %}">Teacher</a></li>
+      <li><a href="{% url 'specific_category' category='Tedding' %}">Wedding</a></li>
    </ul>
    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
    <h3>All Products</h3>

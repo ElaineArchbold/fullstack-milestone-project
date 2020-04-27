@@ -48,15 +48,18 @@
                      <a href="{% url 'products' %}" class="dropdown-toggle" data-toggle="dropdown">Shop</a>
                      <div class="dropdown-menu" style="text-align:center">
                         <a href="{% url 'products' %}">All Products</a><br>
-                        <a href="{% url 'baby' %}">Baby Prints</a>
-                        <a href="{% url 'christening' %}">Christening Prints</a>
-                        <a href="{% url 'communions' %}">Communion Prints</a>
-                        <a href="{% url 'engagement-anniversary' %}">Engagement/Anniversary</a>
-                        <a href="{% url 'family' %}">Family Prints</a>
-                        <a href="{% url 'fingerprint' %}">Fingerprint Kits</a>
-                        <a href="{% url 'mothersdayfathersday' %}">Mothers Day Prints</a>
-                        <a href="{% url 'teacher' %}">Teacher Prints</a>
-                        <a href="{% url 'wedding' %}">Wedding Prints</a>
+                        <a href="{% url 'specific_category' category='anniversary' %}">Anniversary</a><br>
+                        <a href="{% url 'specific_category' category='baby' %}">Baby</a><br>
+                        <a href="{% url 'specific_category' category='christening' %}">Christening</a><br>
+                        <a href="{% url 'specific_category' category='Engagement' %}">Engagement</a><br>
+                        <a href="{% url 'specific_category' category='Family' %}">Family</a><br>
+                        <a href="{% url 'specific_category' category='Fathers' %}">Fathers Day</a><br>
+                        <a href="{% url 'specific_category' category='Fingerprint' %}">Fingerprint Kits</a><br>
+                        <a href="{% url 'specific_category' category='Mothers' %}">Mothers Day</a><br>
+                        <a href="{% url 'specific_category' category='Teacher' %}">Teacher</a><br>
+                        <a href="{% url 'specific_category' category='Tedding' %}">Wedding</a><br>
+
+
                      </div>
                   </div>
                </li>

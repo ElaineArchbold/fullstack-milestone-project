@@ -3,16 +3,17 @@ from django.db import models
 # Create your models here.
 
 CATEGORY_CHOICES = (
-    ('baby', 'BABY'),
-    ('christening', 'CHRISTENING'),
-    ('communion', 'COMMUNION'),
-    ('engagement-anniversary', 'ENGAGEMENT-ANNIVERSARY'),
-    ('family', 'FAMILY'),
-    ('fingerprint', 'FINGERPRINT'),
-    ('mothersdayfathersday', 'MOTHERSDAY/FATHERSDAY'),
-    ('teacher', 'TEACHER'),
-    ('wedding', 'WEDDING'),)
-
+    ('Anniversary', 'ANNIVERSARY'),
+    ('Baby', 'BABY'),
+    ('Christening', 'CHRISTENING'),
+    ('Communion', 'COMMUNION'),
+    ('Engagement', 'ENGAGEMENT'),
+    ('Family', 'FAMILY'),
+    ('Fathers', 'FATHERS'),
+    ('Fingerprint', 'FINGERPRINT'),
+    ('Mothers', 'MOTHERS'),
+    ('Teacher', 'TEACHER'),
+    ('Wedding', 'WEDDING'),)
 
 class Product(models.Model):
     category = models.CharField(max_length=30, choices=CATEGORY_CHOICES, default='baby')
