@@ -4,7 +4,7 @@
   <a href="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/full-logo.jpg" target="_blank"><img src="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/full-logo.jpg" alt="Alio Prints Logo"/></a>
 </h1>
 <h4 align="center">
-The site can be viewed through Heroku [Here](https://alio-prints.herokuapp.com)
+The site can be viewed through Heroku: (https://alio-prints.herokuapp.com)
 </h4>
 
 
@@ -97,9 +97,8 @@ I have tested all links. The Instagram, YouTube and Facebook links in the footer
 
 The contact form has been tested and user inputs are sent to the terminal.
 
-<h6 align="center">
  ![Desktop View1](media/images/responsive.png)
-</h6>
+
 
 
 
