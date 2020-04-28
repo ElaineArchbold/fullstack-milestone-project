@@ -46,7 +46,7 @@
                <li>
                   <div class="dropdown">
                      <a href="{% url 'products' %}" class="dropdown-toggle" data-toggle="dropdown">Shop</a>
-                     <div class="dropdown-menu" style="text-align:center">
+                     <div class="dropdown-menu">
                         <a href="{% url 'products' %}">All Products</a><br>
                         <a href="{% url 'specific_category' category='anniversary' %}">Anniversary</a><br>
                         <a href="{% url 'specific_category' category='baby' %}">Baby</a><br>
@@ -58,8 +58,6 @@
                         <a href="{% url 'specific_category' category='Mothers' %}">Mothers Day</a><br>
                         <a href="{% url 'specific_category' category='Teacher' %}">Teacher</a><br>
                         <a href="{% url 'specific_category' category='Tedding' %}">Wedding</a><br>
-
-
                      </div>
                   </div>
                </li>
@@ -71,22 +69,20 @@
                   {% endif %}
                   </a>
                </li>
-                  <li>
-              
-				<div class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown">Account</a>
-					<div class="dropdown-menu">
-						{% if user.is_authenticated %}
-						<a href="{% url 'profile' %}">Profile</a>
-						<a href="{% url 'logout' %}">Log Out</a>
-					</div>
-					{%  else %}
-					<a href="{% url 'registration' %}">Register</a>
-					<a href="{% url 'login' %}">Log In</a>
-					{% endif %}
-				</div>
-				
-				</li>
+               <li>
+                  <div class="dropdown">
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account</a>
+                     <div class="dropdown-menu">
+                        {% if user.is_authenticated %}
+                        <a href="{% url 'profile' %}">Profile</a>
+                        <a href="{% url 'logout' %}">Log Out</a>
+                     </div>
+                     {%  else %}
+                     <a href="{% url 'registration' %}">Register</a>
+                     <a href="{% url 'login' %}">Log In</a>
+                     {% endif %}
+                  </div>
+               </li>
                <li>
                   <div class="search-display">
                      <form action="{% url 'search' %}" method="get">
@@ -95,8 +91,6 @@
                      </form>
                   </div>
                </li>
-            
-               
             </ul>
          </div>
       </nav>

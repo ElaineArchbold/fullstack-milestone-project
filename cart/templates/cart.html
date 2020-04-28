@@ -5,7 +5,6 @@
 {% load bootstrap_tags %}
 {% block content %}
 <div class="container-fluid cart">
-           
    <h1>My Cart</h1>
    <div class="col-12">
       <div class="row row-flex">
@@ -43,18 +42,18 @@
          </div>
          {% endfor %}
       </div>
-      <div class="col-12" style="text-align:center">
+      <div class="col-12">
          <h3>Total</h3>
          <h3><span><i class="fa fa-eur" aria-hidden="true"></i></span>{{ total }}</h3>
-             {% if user.is_authenticated %}
+         {% if user.is_authenticated %}
          <a href="{% url 'checkout' %}" class="btn btn-success checkout-btn" role="button"><span><i class="fa fa-credit-card" aria-hidden="true"></i></span> Checkout</a>
-           {%  else %}
-           <p><em>Login or Create an Account to Checkout</em></p>
-           {% csrf_token %}
-               <a class="btn btn-login" href="{% url 'cartlogin' %}"><i class="fa fa-sign-in"></i> Log In</a>
-               {% csrf_token %}
-               <a class="btn btn-register" href="{% url 'cartregistration' %}"><i class="fa fa-user-plus"></i> Register</a>
-               {% endif %}
+         {%  else %}
+         <p><em>Login or Create an Account to Checkout</em></p>
+         {% csrf_token %}
+         <a class="btn btn-login" href="{% url 'cartlogin' %}"><i class="fa fa-sign-in"></i> Log In</a>
+         {% csrf_token %}
+         <a class="btn btn-register" href="{% url 'cartregistration' %}"><i class="fa fa-user-plus"></i> Register</a>
+         {% endif %}
       </div>
    </div>
 </div>

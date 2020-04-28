@@ -266,32 +266,37 @@ a:hover {
 }
 
 .btn-login {
-    color: #ffffff;
-    background-color: #e8b3b3;
-    border-color: #e8b3b3;
-    padding: 17px;
-    font-size: 1.5vw; }
+	color: #ffffff;
+	background-color: #e8b3b3;
+	border-color: #e8b3b3;
+	padding: 17px;
+	font-size: 1.5vw;
+}
 
 .btn-login:hover {
-    color: #e8b3b3;
-    background-color: #ffffff;
-    border-color: #e8b3b3;
-    padding: 17px;
-    font-size: 1.5vw; }
+	color: #e8b3b3;
+	background-color: #ffffff;
+	border-color: #e8b3b3;
+	padding: 17px;
+	font-size: 1.5vw;
+}
 
 .btn-register {
-    color: #ffffff;
-    background-color:#434343;
-    border-color: #434343;
-    padding: 17px;
-    font-size: 1.5vw; }
+	color: #ffffff;
+	background-color: #434343;
+	border-color: #434343;
+	padding: 17px;
+	font-size: 1.5vw;
+}
 
 .btn-register:hover {
-    color: #434343;
-    background-color:#ffffff;
-    border-color: #434343;
-    padding: 17px;
-    font-size: 1.5vw; }
+	color: #434343;
+	background-color: #ffffff;
+	border-color: #434343;
+	padding: 17px;
+	font-size: 1.5vw;
+}
+
 
 /*----------------------------------------------------------------HOME PAGE*/
 
@@ -372,6 +377,10 @@ a:hover {
 	font-size: 1.5vw;
 }
 
+.viewgallery {
+    float:right
+}
+
 .parallaxthree {
 	background-image: url("/media/images/par3.jpg");
 	background-attachment: fixed;
@@ -396,6 +405,9 @@ a:hover {
 	color: #e8b3b3;
 }
 
+.getintouch {
+    float:left
+}
 .parallaxfour {
 	background-image: url("/media/images/letterlogo.jpg");
 	background-attachment: fixed;
@@ -414,6 +426,7 @@ a:hover {
 
 #myform {
 	margin: 12px;
+    padding:12px;
 	background-color: transparent;
 }
 
@@ -595,24 +608,25 @@ a:hover {
 }
 
 #myBtn {
-    display: block;
-    position: fixed;
-    bottom: 59px;
-    right: 15px;
-    z-index: 99;
-    font-size: 20px;
-    border: none;
-    outline: none;
-    background-color: #e8b3b3;
-    color: white;
-    cursor: pointer;
-    padding: 5px;
-    border-radius: 4px;
+	display: block;
+	position: fixed;
+	bottom: 59px;
+	right: 15px;
+	z-index: 99;
+	font-size: 20px;
+	border: none;
+	outline: none;
+	background-color: #e8b3b3;
+	color: white;
+	cursor: pointer;
+	padding: 5px;
+	border-radius: 4px;
 }
 
 #myBtn:hover {
-  background-color: #434343;
+	background-color: #434343;
 }
+
 
 /*----------------------------------------------------------------GALLERY PAGE*/
 
@@ -639,6 +653,14 @@ a:hover {
 	font-family: quicksand;
 	color: #434343;
 }
+
+.gallery a {
+	text-align: center;
+	font-size: 4vw;
+	font-family: quicksand;
+	color: #434343;
+}
+
 
 .img-thumbnail {
 	padding: 1.25rem;
@@ -1032,11 +1054,13 @@ footer {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-.btn-login {
-    font-size: 4vw;
-}}
+	.btn-login {
+		font-size: 4vw;
+	}
+}
 
 @media (min-width: 320px) and (max-width: 767px) {
-.btn-register {
-    font-size: 4vw;
-}}
+	.btn-register {
+		font-size: 4vw;
+	}
+}

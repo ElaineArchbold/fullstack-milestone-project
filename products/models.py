@@ -15,6 +15,7 @@ CATEGORY_CHOICES = (
     ('Teacher', 'TEACHER'),
     ('Wedding', 'WEDDING'),)
 
+
 class Product(models.Model):
     category = models.CharField(max_length=30, choices=CATEGORY_CHOICES, default='baby')
     name = models.CharField(max_length=254, default='')

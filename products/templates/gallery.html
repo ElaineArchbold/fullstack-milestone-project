@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <title>Gallery</title>
 {% extends 'base.html' %}
+{% load static from staticfiles %}
+{% load bootstrap_tags %}
+{% block head_js %}
+<script type="text/javascript" src="{% static 'js/scripts.js' %}"></script>
+{% endblock %}
 {% block content %}
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
 <div class="gallery-container">
    <!--BABY PRINTS-->
    <section>
       <div class="gallery">
-         <h3 >Baby Prints</h3>
+         <h3><a href="{% url 'specific_category' category='baby' %}">Baby Prints</a></h3>
          <div class="container">
             <div class="row photos">
                <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 item"><a href="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/classic-boy.png" data-lightbox="photos" data-title="Classic Boy"><img class="img-fluid img-thumbnail" src="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/classic-boy.png" alt="Classic Boy"></a>
@@ -40,7 +46,7 @@
    <!--FAMILY PRINTS-->
    <section>
       <div class="gallery">
-         <h3>Family Prints</h3>
+         <h3><a href="{% url 'specific_category' category='family' %}">Family Prints</a></h3>
          <div>
             <div class="container">
                <div class="row photos">
@@ -68,7 +74,7 @@
    <!--MOTHERS DAY/FATHERS DAY-->
    <section>
       <div class="gallery">
-         <h3>Mothers Day/Fathers Day Prints</h3>
+         <h3><a href="{% url 'specific_category' category='mothersday' %}">Mothers Day/</a><a href="{% url 'specific_category' category='fathersday' %}">Fathers Day Prints</a></h3>
          <div>
             <div class="container">
                <div class="row photos">
@@ -96,7 +102,7 @@
    <!--FINGERPRINT KITS-->
    <section>
       <div class="gallery">
-         <h3>Fingerprint Kits</h3>
+         <h3><a href="{% url 'specific_category' category='fingerprint' %}">Fingerprint Kits</a></h3>
          <div>
             <div class="container">
                <div class="row photos">
@@ -120,7 +126,7 @@
    <!--CHRISTENING PRINTS-->
    <section>
       <div class="gallery">
-         <h3>Christening Prints</h3>
+         <h3><a href="{% url 'specific_category' category='christening' %}">Christening Prints</a></h3>
          <div>
             <div class="container">
                <div class="row photos">
@@ -138,7 +144,7 @@
    <!--COMMUNION PRINTS-->
    <section>
       <div class="gallery">
-         <h3>Communion Prints</h3>
+         <h3><a href="{% url 'specific_category' category='communion' %}">Communion Prints</a></h3>
          <div>
             <div class="container">
                <div class="row photos">
@@ -159,10 +165,10 @@
          </div>
       </div>
    </section>
-   <!--ENGAGEMENT PRINTS-->
+   <!--ANNIVERSARY/WEDDING/ENGAGEMENT PRINTS-->
    <section>
       <div class="gallery">
-         <h3>Wedding/Engagement Prints</h3>
+         <h3><a href="{% url 'specific_category' category='anniversary' %}">Anniversary/</a><a href="{% url 'specific_category' category='engagement' %}">Engagement/</a><a href="{% url 'specific_category' category='wedding' %}">Wedding Prints</a></h3>
          <div>
             <div class="container">
                <div class="row photos">
@@ -190,7 +196,7 @@
    <!--TEACHER PRINTS-->
    <section>
       <div class="gallery">
-         <h3>Teacher Prints</h3>
+         <h3><a href="{% url 'specific_category' category='teacher' %}">Teacher Prints</a></h3>
          <div>
             <div class="container">
                <div class="row photos">
