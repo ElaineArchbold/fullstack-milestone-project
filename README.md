@@ -101,8 +101,11 @@ I have tested all links. The Instagram, YouTube and Facebook links in the footer
 
 The contact form has been tested and user inputs are sent to the terminal.
 
- ![Desktop View1](media/images/responsive.png)
-
+ 
+<h4 align="center">
+View the responsive design here:
+  <a href="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/responsive.png" target="_blank"><img src="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/responsive.png" alt="Alio Prints Logo"/></a>
+</h4>
 
 
 
