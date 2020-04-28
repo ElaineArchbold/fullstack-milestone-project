@@ -3,9 +3,9 @@
 <h1 align="center">
   <a href="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/full-logo.jpg" target="_blank"><img src="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/full-logo.jpg" alt="Alio Prints Logo"/></a>
 </h1>
-<h2 align="center">
+<h4 align="center">
 The site can be viewed through Heroku [Here](https://alio-prints.herokuapp.com)
-</h2>
+</h4>
 
 
 ## Elaine Archbold Full Stack Milestone Project
@@ -15,11 +15,11 @@ For this project, I created a website for Alio Prints which is a graphic design 
 ## UX
 My goal in the design was to create a very user friendly site where users could view and order their own custom print. I kept the Navbar and footer simple, and the colour theme is subtle. 
 
-*User A – As a new user, I want to be able to browse all available prints. 
-*User B – As a new user looking to order a print, I want to be able to do this easily.  
-*User C - As a new user I want to be able to seach for a specific product easily. 
-*User D - As an existing user, I want to check what items I have in my cart from a previous visit to the site. 
-*User E - As an employee of Alio Prints, I want to be able to login to the admin portal and update/add products. 
+* User A – As a new user, I want to be able to browse all available prints. 
+* User B – As a new user looking to order a print, I want to be able to do this easily.  
+* User C - As a new user I want to be able to seach for a specific product easily. 
+* User D - As an existing user, I want to check what items I have in my cart from a previous visit to the site. 
+* User E - As an employee of Alio Prints, I want to be able to login to the admin portal and update/add products. 
 
 I created Wireframes of how I wanted the site to look before starting. See below:
 
@@ -32,10 +32,10 @@ I created Wireframes of how I wanted the site to look before starting. See below
 ## Features
 ### Existing Features
 The [Home](https://alio-prints.herokuapp.com) page features a scrolling parallax effect, with four sections. 
-..* Section one is background image I created in Photoshop as a wall mock-up of some of the prints. I feel like the background image gives a good introduction to the site and the colour theme is based around this.
-..* Section two is a brief description about what we do with a button link to the Gallery.
-..* Section three is a description of the order process, with a link to the contact page.
-..* Section four is a carousel of a few of our best-selling prints. On large screens, this displays 4 images in a row, and a different carousel is active on smaller screens to show one image in a row. This was accomplished through media queries and JavaScript.
+- Section one is background image I created in Photoshop as a wall mock-up of some of the prints. I feel like the background image gives a good introduction to the site and the colour theme is based around this.
+- Section two is a brief description about what we do with a button link to the Gallery.
+- Section three is a description of the order process, with a link to the contact page.
+- Section four is a carousel of a few of our best-selling prints. On large screens, this displays 4 images in a row, and a different carousel is active on smaller screens to show one image in a row. This was accomplished through media queries and JavaScript.
 
 The [Gallery](https://alio-prints.herokuapp.com/gallery) page shows all of the prints in a lightbox, divided up by category. Each header is a link to that category's shop page.
 
@@ -97,6 +97,11 @@ I have tested all links. The Instagram, YouTube and Facebook links in the footer
 
 The contact form has been tested and user inputs are sent to the terminal.
 
+<h6 align="center">
+ ![Desktop View1](media/images/responsive.png)
+</h6>
+
+
 
 ### Client stories testing:
 
@@ -112,16 +117,16 @@ Some pages offer two possible paths in their call to action buttons:
 
 ### Testing client stories
 
-*User A – As a new user, I want to be able to view all available prints and decide upon which one I prefer. 
-..*From the navigation bar on every page, I can select [Gallery](https://alio-prints.herokuapp.com/products/gallery) in the navigation menu to display a lightbox of all available designs. This shows a page with all products divided into sections. When an image is clicked, it opens up a scrolling lightbox effect. Also, each category header is linked to the shop for that category.
-*User B – As a new user looking to order a print, I want to be able to do this easily.  
-..*From the navigation bar on every page, I can select 'Shop' and a dropdown menu appears which displays all of the categories of available products. I can either choose a category or I can search all products by selecting [All Product](https://alio-prints.herokuapp.com/products). From here, I can add items to my cart. Once I have done this, I can either login or register to enable the checkout function.
-*User C - As a user looking for a specific product, I can use the search bar in the navigation menu. 
-..*From the navigation bar on every page, I can use the search function. I type in my keyword and the search returns the results and redirects me to the relevant page. The search is based on the product description so there are many keywords I can use to search. 
-*User D - As an existing user, I want to check what items I have in my cart from a previous visit to the site. 
-..*From the navigation bar on every page, I can select [Cart](https://alio-prints.herokuapp.com/products/cart). This will take me to the Cart page with a list of the products in my cart. There is also an icon that appears on the navigation bar to display any current items in the cart.
-*User E - As an employee of Alio Prints, I want to be able to login to the admin portal and update/add products. 
-..*I can do this by adding '/admin' to the end of the URL and enter my login details. From here, I can add or ammend products.
+* User A – As a new user, I want to be able to view all available prints and decide upon which one I prefer. 
+    - From the navigation bar on every page, I can select [Gallery](https://alio-prints.herokuapp.com/products/gallery) in the navigation menu to display a lightbox of all available designs. This shows a page with all products divided into sections. When an image is clicked, it opens up a scrolling lightbox effect. Also, each category header is linked to the shop for that category.
+* User B – As a new user looking to order a print, I want to be able to do this easily.  
+    - From the navigation bar on every page, I can select 'Shop' and a dropdown menu appears which displays all of the categories of available products. I can either choose a category or I can search all products by selecting [All Product](https://alio-prints.herokuapp.com/products). From here, I can add items to my cart. Once I have done this, I can either login or register to enable the checkout function.
+* User C - As a user looking for a specific product, I can use the search bar in the navigation menu. 
+    - From the navigation bar on every page, I can use the search function. I type in my keyword and the search returns the results and redirects me to the relevant page. The search is based on the product description so there are many keywords I can use to search. 
+* User D - As an existing user, I want to check what items I have in my cart from a previous visit to the site. 
+    - From the navigation bar on every page, I can select [Cart](https://alio-prints.herokuapp.com/products/cart). This will take me to the Cart page with a list of the products in my cart. There is also an icon that appears on the navigation bar to display any current items in the cart.
+* User E - As an employee of Alio Prints, I want to be able to login to the admin portal and update/add products. 
+    - I can do this by adding '/admin' to the end of the URL and enter my login details. From here, I can add or ammend products.
 
 
 ## Deployment
@@ -144,6 +149,8 @@ Download a copy of the file from [GitHub] https://github.com/ElaineArchbold/full
 4.  IP | 0.0.0.0 and your MONGO_URI.
 5.  Click Deploy.
 
+
+COLLECT STATIC
 
 ## Credits
 ### Content
