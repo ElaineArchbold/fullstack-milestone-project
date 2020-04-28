@@ -8,10 +8,10 @@ My goal in the design was to create a very user friendly site where users could 
 
 I kept the Navbar and footer simple, and the colour theme is subtle. 
 
-*User A – As a new user, I want to be able to view all available prints and decide upon which one I prefer. I can select 'Gallery' (https://alio-prints.herokuapp.com/products/gallery) in the navigation menu to display a lightbox of all available designs. Each header is linked to the product page for that category.
-*User B – As a user looking to order a print, I want to be able to do this easily.  I can select 'Shop' (https://alio-prints.herokuapp.com/products/shop) in the navigation menu to display the products availble. These are arranged by category or I can search all products by selecting 'All Products'. From here, I can add items to my cart. Once I have done this, I can either login or register to enable the checkout function.
+*User A – As a new user, I want to be able to view all available prints and decide upon which one I prefer. I can select [Gallery](https://alio-prints.herokuapp.com/products/gallery) in the navigation menu to display a lightbox of all available designs. Each header is linked to the product page for that category.
+*User B – As a user looking to order a print, I want to be able to do this easily.  I can select [Shop](https://alio-prints.herokuapp.com/products/shop) in the navigation menu to display the products availble. These are arranged by category or I can search all products by selecting 'All Products'. From here, I can add items to my cart. Once I have done this, I can either login or register to enable the checkout function.
 *User C - As a user looking for a specific product, I can use the search bar in the navigation menu. The search function is based on the product description so I have many key words I can use to search. 
-*User D - As an esisting user, I want to check what items I have in my cart from a previous visit to the site. I can select 'Cart' (https://alio-prints.herokuapp.com/products/cart) in the navigation menu to display the items stored in my cart.
+*User D - As an esisting user, I want to check what items I have in my cart from a previous visit to the site. I can select [Cart](https://alio-prints.herokuapp.com/products/cart) in the navigation menu to display the items stored in my cart.
 
 The site can be viewed through Heroku: (https://alio-prints.herokuapp.com)
 
