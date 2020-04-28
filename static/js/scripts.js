@@ -4,7 +4,7 @@ var mybutton = document.getElementById("myBtn");
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () {
-	scrollFunction()
+	scrollFunction();
 };
 
 function scrollFunction() {
@@ -24,7 +24,7 @@ function topFunction() {
 //CAROUSEL FOR LARGE SCREENS
 $('#myCarousel').carousel({
 	interval: 1000
-})
+});
 
 $('.carousel .item').each(function () {
 	var next = $(this).next();
