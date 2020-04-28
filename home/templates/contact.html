@@ -1,40 +1,29 @@
 <!DOCTYPE html>
 <title>Contact</title>
 {% extends 'base.html' %}
-{% load static from staticfiles %}
-{% load bootstrap_tags %}
-{% block head_js %}
-<script type="text/javascript">
-   (function(){
-      emailjs.init("user_oaKOpLf7qMVhjLSIICjCg");
-   })();
-</script>
-<script type="text/javascript" src="{% static 'js/scripts.js' %}"></script>
-{% endblock %}
 {% block content %}
 <div class="container-fluid background-container">
    <!--CONTACT FORM-->
    <section class="contact">
       <div class="container-fluid">
-         <h2>Get in touch</h2>
+      <h2>Get in touch</h2>
          <div class="row">
-            <div class="col-12">
-               <p>Send us a message</p>
-               <div>
-                  <form id="myform" onsubmit="return sendMail(this);" method="POST">
-                     <input type="hidden" value="{{ csrf_token }}" name="csrfmiddlewaretoken">
-                     <input type="text" class="form-control" name="from_name" placeholder="Name" required/>
-                     <input type="text" class="form-control" name="from_email" placeholder="Email Address" required/>
-                     <textarea rows="10" class="form-control" name="query" placeholder="Type your question here..." required></textarea>
-                     <div class="form-row text-center">
-                        <div class="col-12"><button type="submit" class="btn btn-success center-block">SEND</button></div>
-                     </div>
-                  </form>
+         <div class="col-12">
+            <p>Send us a message</p>
+            <div>
+                <form id="myform" role="form" action="" method="post">
+                  {% csrf_token %}
+                    <input class="form-control" type="text" name="name" required="" id="id_name" placeholder="Your Name:">
+                   <input class="form-control" type="email" name="email" required="" id="id_email" placeholder="Your Email:">
+                    <textarea class="form-control" name="query" cols="40" rows="10" required="" id="id_query" placeholder="How can we help?"></textarea>
+                  <div class="form-row text-center"><div class="col-12">
+                     <button class="btn btn-success center-block" type="submit">Submit</button></div>
+                  </div>
+               </form>
                </div>
-            </div>
+                 </div>
          </div>
       </div>
    </section>
 </div>
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 {% endblock %}

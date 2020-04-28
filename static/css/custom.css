@@ -378,7 +378,7 @@ a:hover {
 }
 
 .viewgallery {
-    float:right
+	float: right
 }
 
 .parallaxthree {
@@ -406,8 +406,9 @@ a:hover {
 }
 
 .getintouch {
-    float:left
+	float: left
 }
+
 .parallaxfour {
 	background-image: url("/media/images/letterlogo.jpg");
 	background-attachment: fixed;
@@ -422,35 +423,6 @@ a:hover {
 	text-align: center;
 	margin-top: 0px;
 	padding-top: 40px;
-}
-
-#myform {
-	margin: 12px;
-    padding:12px;
-	background-color: transparent;
-}
-
-#myform input {
-	margin: 10px 0px 10px 0px;
-}
-
-#myform textarea {
-	margin: 10px 0px 10px 0px;
-}
-
-.form-box {
-	margin: 10px;
-	text-align: center;
-}
-
-.facebook {
-	padding-top: 50px;
-	text-align: center;
-}
-
-.twitter {
-	padding-top: 50px;
-	text-align: center;
 }
 
 .sml-carousel {
@@ -534,7 +506,8 @@ a:hover {
 .caption {
 	margin-bottom: 12px;
 	margin-top: 0;
-	padding-top: 0
+	padding-top: 10px 0px 10px 0px;
+	height: 50px;
 }
 
 .row.row-flex {
@@ -591,7 +564,7 @@ a:hover {
 	background-size: cover;
 	background-position: 50% 50%;
 	padding: 30px;
-	min-height: 2000px;
+	min-height: 6000px;
 	margin-top: 60px;
 }
 
@@ -660,7 +633,6 @@ a:hover {
 	font-family: quicksand;
 	color: #434343;
 }
-
 
 .img-thumbnail {
 	padding: 1.25rem;
@@ -793,6 +765,21 @@ a:hover {
 	text-align: center
 }
 
+#myform input {
+	margin: 10px 0px 10px 0px;
+}
+
+#myform textarea {
+	margin: 10px 0px 10px 0px;
+}
+
+#myform {
+	margin: 12px;
+	padding: 12px;
+	background-color: transparent;
+	text-align: center;
+}
+
 
 /*----------------------------------------------------------------FOOTER*/
 
@@ -869,6 +856,7 @@ footer {
 	}
 }
 
+
 @media (min-width: 320px) and (max-width: 767px) {
 	.parallaxtwo {
 		height: 250px;
@@ -876,9 +864,16 @@ footer {
 	}
 }
 
+
 @media (min-width: 320px) and (max-width: 767px) {
 	.parallaxtwo p {
 		font-size: 3.5vw;
+	}
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+	.parallaxtwo p {
+		font-size: 2.5vw;
 	}
 }
 
@@ -888,9 +883,24 @@ footer {
 	}
 }
 
+
+@media (max-width: 991px) and (min-width: 320px) {
+	.parallaxthree {
+		height: 370px;
+		padding-top: 15px;
+	}
+}
+
+
 @media (min-width: 320px) and (max-width: 767px) {
 	.parallaxthree p {
 		font-size: 3.5vw;
+	}
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+	.parallaxthree p {
+		font-size: 2.5vw;
 	}
 }
 
@@ -900,11 +910,12 @@ footer {
 	}
 }
 
-@media (max-width: 991px) and (min-width: 320px) {
-	.parallaxthree {
-		height: 354px;
-		padding-top: 15px;
-		text-align: center;
+
+@media (max-width: 767px) and (min-width: 320px) {
+	.parallaxthree i {
+		font-size: 6vw;
+		padding: 7px;
+		color: #e8b3b3;
 	}
 }
 
@@ -963,11 +974,9 @@ footer {
 	.social-links li a i {
 		line-height: 30px;
 		width: 30px;
-		height: 30px;
 		padding: 0px;
 		border-radius: 50%;
 		font-size: 20px;
-		line-height: 30px;
 	}
 }
 
