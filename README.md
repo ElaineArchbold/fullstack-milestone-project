@@ -3,12 +3,12 @@
 <h1 align="center">
   <a href="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/full-logo.jpg" target="_blank"><img src="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/full-logo.jpg" alt="Alio Prints Logo"/></a>
 </h1>
-<h4 align="center">
-The site can be viewed through Heroku: (https://alio-prints.herokuapp.com)
-</h4>
 
 
-## Elaine Archbold Full Stack Milestone Project
+
+
+
+## Elaine Archbold - Full Stack Frameworks with Django Milestone Project
 
 For this project, I created a website for Alio Prints which is a graphic design business I started a few years ago. I wanted the look of the site to be clean and simple, and make for a smooth online shopping experience.
 
@@ -21,7 +21,11 @@ My goal in the design was to create a very user friendly site where users could 
 * User D - As an existing user, I want to check what items I have in my cart from a previous visit to the site. 
 * User E - As an employee of Alio Prints, I want to be able to login to the admin portal and update/add products. 
 
+The site can be viewed [HERE](https://alio-prints.herokuapp.com)
+
 I created Wireframes of how I wanted the site to look before starting. See below:
+
+
 
 
 
@@ -111,7 +115,7 @@ Most common path through the website:
 Some pages offer two possible paths in their call to action buttons: 
 - From Home Section 2 > Gallery 
 - From Home Section 3 > Contact Page
-- From Gallery > Category Header > Product Category Shop Page
+- From Gallery > Click Product Category Header > Product Category Shop Page
 
 
 ### Testing client stories
@@ -129,7 +133,8 @@ Some pages offer two possible paths in their call to action buttons:
 
 
 ## Deployment
-
+AWS BUCKETS!!
+TRAVIS!!!
 I have set Heroku to link to GitHub, so each push to GitHub also pushes to Heroku.
 I have set the IP and PORT as below, and saved the MongoDB URI details here also. I used an env.py file to save the MongoDB URI in GitPod and imported this to app.py so that the details were not on view to anyone looking at the site on GitHub.
 
@@ -155,18 +160,18 @@ COLLECT STATIC
 ### Content
 
 ### Media
-The background images on the homepage parallax two and three on the home page are from [Unsplash](https://unsplash.com/)
+- The background images on the homepage parallax two and three on the home page are from [Unsplash](https://unsplash.com/)
 
-The print designs, logos and backdrop on parallax one on the home page were created by me using Photoshop/Publisher.
+- The print designs, logos and backdrop on parallax one on the home page were created by me using Photoshop/Publisher.
 
-I used Photoshop to create the background image for Parallax one. I replaced the background on an image I found of ‘Mrs Hinch’. I also used Photoshop to edit all background images
+- I used Photoshop to create the background image for Parallax one. I replaced the background on an image I found of ‘Mrs Hinch’. I also used Photoshop to edit all background images
 
 ### Acknowledgements
-The footer, navbar and parallax effect were taken and amended from previous projects.
+- The footer, navbar and parallax effect were taken and amended from previous projects.
 
-I found the lightbox snippet on the Inspiration page on: https://epicbootstrap.com/snippets/lightbox-gallery
+- I found the lightbox snippet on the Inspiration page on: https://epicbootstrap.com/snippets/lightbox-gallery
 
-I found the snippet for the gallery carousel on the Home page on: https://stackoverflow.com/questions/20007610/bootstrap-carousel-multiple-frames-at-once
+- I found the snippet for the gallery carousel on the Home page on: https://stackoverflow.com/questions/20007610/bootstrap-carousel-multiple-frames-at-once
 
-I found the snippet for the contact form on: https://hellowebbooks.com/news/tutorial-setting-up-a-contact-form-with-django/
+- I found the snippet for the contact form on: https://hellowebbooks.com/news/tutorial-setting-up-a-contact-form-with-django/
 
