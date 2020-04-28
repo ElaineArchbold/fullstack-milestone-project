@@ -43,17 +43,17 @@ The navbar, footer and all buttons have hover states activated to change size/co
 2.	HTML
 3.	CSS
 4.	Bootstrap (4)
-5.	Materialize
+5.  Django 1.11.29
 6.	Photoshop
 7.	Python
-8.	Flask
-9.	MongoDB
+8.  Boto3
+9.  AWS S3
 10.	Jquery
-11.	PyMongo
-12.	Jinja
-13.	Google Fonts
-14.	Font Awesome
-15. EmailJS
+11.	Stripe
+12.	Google Fonts
+13.	Font Awesome
+14. 
+
 
 
 ## Testing
@@ -70,6 +70,8 @@ The CSS was checked on the W3C CSS Validation Service.
 All HTML was formatted on https://freeformatter.com.
 
 Screenshots of the responsive design can be seen here:
+
+Tested on Travis.
 
 
 ## Deployment
