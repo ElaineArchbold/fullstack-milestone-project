@@ -55,10 +55,10 @@ Desktop View:
 ## Features
 ### Existing Features
 -   The [Home](https://alio-prints.herokuapp.com) page features a scrolling parallax effect, with four sections. 
-        - Section one is background image I created in Photoshop as a wall mock-up of some of the prints. I feel like the background image gives a good introduction to what the site is all about and the colour theme is based around this.
-        - Section two is a brief description about what we do with a button link to the Gallery page.
-        - Section three is a description of the order process, with a link to the Contact page.
-        - Section four is a carousel of a few of our best-selling prints. On large screens, this displays four images in a row, and a different carousel is active on smaller screens to show one image in a row. This was accomplished through media queries and JavaScript.
+    *   Section one is background image I created in Photoshop as a wall mock-up of some of the prints. I feel like the background image gives a good introduction to what the site is all about and the colour theme is based around this.
+    *   Section two is a brief description about what we do with a button link to the Gallery page.
+    *   Section three is a description of the order process, with a link to the Contact page.
+    *   Section four is a carousel of a few of our best-selling prints. On large screens, this displays four images in a row, and a different carousel is active on smaller screens to show one image in a row. This was accomplished through media queries and JavaScript.
 
 -   The Navbar is sticky and collapses on small screens.
 
