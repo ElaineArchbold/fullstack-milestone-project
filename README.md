@@ -26,10 +26,20 @@ The site can be viewed [here](https://alio-prints.herokuapp.com)
 
 I created Wireframes of how I wanted the site to look before starting. See below:
 
+<h4 align="center">
+Mobile View:
+  <a href="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/WireframesMobile.jpg" target="_blank"><img src="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/WireframesMobile.jpg" alt="Mobile View"/></a>
+</h4>
 
+<h4 align="center">
+Tablet View
+  <a href="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/WireframesTablet.jpg" target="_blank"><img src="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/WireframesTablet.jpg" alt="Tablet View"/></a>
+</h4>
 
-
-
+<h4 align="center">
+Desktop View:
+  <a href="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/WireframesPC.jpg" target="_blank"><img src="https://alioprints.s3-eu-west-1.amazonaws.com/media/images/WireframesPC.jpg" alt="Desktop View"/></a>
+</h4>
 
 
 
@@ -228,5 +238,3 @@ Some pages offer two possible paths in their call to action buttons:
 - I found the snippet for the contact form [here](https://hellowebbooks.com/news/tutorial-setting-up-a-contact-form-with-django/)
 
 - The shopping functionality was taken from the Fullstack Ecommece mini project with the Code Institute.
-
-
