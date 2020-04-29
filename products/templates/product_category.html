@@ -7,11 +7,13 @@
 <script type="text/javascript" src="{% static 'js/scripts.js' %}"></script>
 {% endblock %}
 {% block content %}
+<!--Breadcrumb menu-->
 <div class="products-container">
    <ul class="breadcrumb">
       <li><a href="{% url 'products' %}">All Products</a></li>
       <li>{{title}}</li>
    </ul>
+<!--Scroll to top function-->
    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
    <h3>{{ title }}</h3>
    {% for product in products %}

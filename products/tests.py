@@ -5,7 +5,6 @@ from .models import Product
 
 
 class ProductTests(TestCase):
-    """Defining tests that we'll run against our Post Models"""
 
     def test_str(self):
         test_name = Product(name='A Product')

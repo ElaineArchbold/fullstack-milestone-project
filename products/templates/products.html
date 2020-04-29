@@ -7,6 +7,7 @@
 <script type="text/javascript" src="{% static 'js/scripts.js' %}"></script>
 {% endblock %}
 {% block content %}
+<!--Breadcrumb menu-->
 <div class="products-container">
    <ul class="breadcrumb">
       <li><a href="{% url 'specific_category' category='Anniversary' %}">Anniversary</a></li>
@@ -21,6 +22,7 @@
       <li><a href="{% url 'specific_category' category='Teacher' %}">Teacher</a></li>
       <li><a href="{% url 'specific_category' category='Wedding' %}">Wedding</a></li> 
    </ul>
+<!--Scroll to top function-->
    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" aria-hidden="true"></i></button>
    <h3>All Products</h3>
    {% for product in products %}

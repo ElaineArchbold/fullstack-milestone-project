@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect, reverse
 from django.contrib import auth, messages
-from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from accounts.forms import UserLoginForm, UserRegistrationForm
 
@@ -35,7 +34,7 @@ def login(request):
 
 
 def cartlogin(request):
-    """Return a login page"""
+    """Return a cart login page"""
     if request.user.is_authenticated:
         return redirect(reverse('home'))
     if request.method == "POST":
@@ -88,7 +87,7 @@ def user_profile(request):
 
 
 def cartregistration(request):
-    """Render the registration page"""
+    """Render the cart registration page"""
     if request.user.is_authenticated:
         return redirect(reverse('home'))
 
