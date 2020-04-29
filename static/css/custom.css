@@ -232,13 +232,13 @@ a:hover {
 	border-color: #434343;
 }
 
-.btn-ammend {
+.btn-amend {
 	color: #fafafa;
 	background-color: #e8b3b3;
 	border-radius: 0px 5px 5px 0px;
 }
 
-.btn-ammend:hover {
+.btn-amend:hover {
 	color: #e8b3b3;
 	background-color: #fafafa;
 	border-color: #e8b3b3;
@@ -1083,4 +1083,11 @@ footer {
 	.btn-register {
 		font-size: 4vw;
 	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+.panel-body {
+    height: 106%;
+   
+}
 }
