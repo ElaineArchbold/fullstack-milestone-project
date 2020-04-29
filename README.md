@@ -14,13 +14,15 @@ For this project, I created a website for Alio Prints which is a graphic design 
 ## UX
 My goal in the design was to create a very user friendly site where users could view and order their own custom print. I kept the Navbar and footer simple, and the colour theme is subtle. 
 
+
+### Client stories
 * User A – As a new user, I want to be able to browse all available prints. 
 * User B – As a new user looking to order a print, I want to be able to do this easily.  
 * User C - As a new user I want to be able to search for a specific product easily. 
 * User D - As an existing user, I want to check what items I have in my cart from a previous visit to the site. 
-* User E - As an employee of Aloo Prints, I want to be able to login to the admin portal and update/add products. 
+* User E - As an employee of Alio Prints, I want to be able to login to the admin portal and update/add products. 
 
-The site can be viewed [HERE](https://alio-prints.herokuapp.com)
+The site can be viewed [here](https://alio-prints.herokuapp.com)
 
 I created Wireframes of how I wanted the site to look before starting. See below:
 
@@ -33,35 +35,35 @@ I created Wireframes of how I wanted the site to look before starting. See below
 
 ## Features
 ### Existing Features
-The [Home](https://alio-prints.herokuapp.com) page features a scrolling parallax effect, with four sections. 
-- Section one is background image I created in Photoshop as a wall mock-up of some of the prints. I feel like the background image gives a good introduction to the site and the colour theme is based around this.
-- Section two is a brief description about what we do with a button link to the Gallery.
-- Section three is a description of the order process, with a link to the contact page.
-- Section four is a carousel of a few of our best-selling prints. On large screens, this displays 4 images in a row, and a different carousel is active on smaller screens to show one image in a row. This was accomplished through media queries and JavaScript.
+-   The [Home](https://alio-prints.herokuapp.com) page features a scrolling parallax effect, with four sections. 
+        - Section one is background image I created in Photoshop as a wall mock-up of some of the prints. I feel like the background image gives a good introduction to the site and the colour theme is based around this.
+        - Section two is a brief description about what we do with a button link to the Gallery.
+        - Section three is a description of the order process, with a link to the contact page.
+        - Section four is a carousel of a few of our best-selling prints. On large screens, this displays 4 images in a row, and a different carousel is active on smaller screens to show one image in a row. This was accomplished through media queries and JavaScript.
 
-The Navbar is sticky and collapses on small screens.
+-   The Navbar is sticky and collapses on small screens.
 
-The [Gallery](https://alio-prints.herokuapp.com/gallery) page shows all of the prints in a lightbox, divided up by category. Each header is a link to that category's shop page.
+-   The [Gallery](https://alio-prints.herokuapp.com/gallery) page shows all of the prints in a lightbox, divided up by category. Each header is a link to that category's shop page.
 
-The [Shop](https://alio-prints.herokuapp.com/products) displays a view of all products. From the dropdown in the navigation menu, you can select a category, or view all products.
+-   The [Shop](https://alio-prints.herokuapp.com/products) displays a view of all products. From the dropdown in the navigation menu, you can select a category, or view all products.
 
-The [Cart](https://alio-prints.herokuapp.com/cart) displays the items in your cart. The icon next to cart in the navbar will show the number of products in your cart once you have added them. You must be a registered user to checkout your cart. If you have not already registered or logged in, the 'checkout' button is hidden until you do so. Once you login or register, you will be able to checkout your cart. I have added a value of '1' to the cart input. The user can either just click 'Add' or enter a larger number should they wish to order more prints.
+-   The [Cart](https://alio-prints.herokuapp.com/cart) displays the items in your cart. The icon next to cart in the navbar will show the number of products in your cart once you have added them. You must be a registered user to checkout your cart. If you have not already registered or logged in, the 'checkout' button is hidden until you do so. Once you login or register, you will be able to checkout your cart. I have added a value of '1' to the cart input. The user can either just click 'Add' or enter a larger number should they wish to order more prints.
 
-The 'Account' link on the navigation menu will allow you to either login or out and view your profile if you are a registered user, or register as a new user.  Once logged in, the link will display profile or logout options, and if not logged in, it will display a register or login option.
+-   The 'Account' link on the navigation menu will allow you to either login or out and view your profile if you are a registered user, or register as a new user.  Once logged in, the link will display profile or logout options, and if not logged in, it will display a register or login option.
 
-The 'Search' function uses the product description information to ensure that it is easier for users to find what they are looking for.
+-   The 'Search' function uses the product description information to ensure that it is easier for users to find what they are looking for.
 
-I have used AWS S3 buckets for hosting my static and media files. 
+-   I have used AWS S3 buckets for hosting my static and media files. 
 
-The footer links are set to those brand URLs, and the 'Contact' page uses Django forms to display messages in the terminal window.
+-   The footer links are set to those brand URLs, and the 'Contact' page uses Django forms to display messages in the terminal window.
 
-I have added a custom 404 page with a link back to the Home page.
+-   I have added a custom 404 page with a link back to the Home page.
 
-I also created a favicon in Photoshop which can be seen on the browser tab.
+-   I also created a favicon in Photoshop which can be seen on the browser tab.
 
-I have added a scroll to top button on all of the product pages with JavaScript for easier navigation.
+-   I have added a scroll to top button on all of the product pages with JavaScript for easier navigation.
 
-All links and buttons have hover states activated to change size/colour when the user hovers over them, to improve the UX.
+-   All links and buttons have hover states activated to change size/colour when the user hovers over them, to improve the UX.
 
 ## Technologies Used
 1.  GitPod IDE
@@ -96,9 +98,9 @@ All HTML was checked on the W3C Mark-up Validation Service.
 
 The CSS was checked on the W3C CSS Validation Service.
 
-All JavaScript was checked on jshint.com.
+All JavaScript was checked on [jshint](https://jshint.com/)
 
-All code was formatted on https://freeformatter.com.
+All code was formatted on [Freeformatter](https://freeformatter.com)
 
 I have tested all links. The Instagram, YouTube and Facebook links in the footer go the relevant accounts.
 
@@ -171,7 +173,7 @@ Some pages offer two possible paths in their call to action buttons:
     - I can do this by adding '/admin' to the end of the URL and enter my login details. From here, I can add or amend products. This has been tested and is working.
 
 ## Deployment
-1.  Download a copy of the file from [GitHub] https://github.com/ElaineArchbold/fullstack-milestone-project and open it up in your IDE.
+1.  Download a copy of the file from [GitHub](https://github.com/ElaineArchbold/fullstack-milestone-project) and open it up in your IDE.
     -   (You will need to have access to env.py where the environment variables are stored. This file is in .gitignore so it won't be on GitHub. They are stored in my Heroku app so the deployment will work without the env.py file).
 
 2. The following must be installed on your machine to run this app:
@@ -201,9 +203,10 @@ Some pages offer two possible paths in their call to action buttons:
     -   STRIPE_SECRET and set
     -   DISABLE_COLLECTSTATIC to 1 as we are using S3 to host our static files.
 4.  In settings, link the GitHub repository to Heroku.
-5.  Under 'Deploy' click on 'Deploy Branch', which will pull your up to date repository.
-6.  Select 'open app' once had been built and your app should now be visible.
-7.  From here, you can add /admin to the URL to access the django administration dashboard. Here you can view and change users, groups and products. Can also view all of the orders made on the app.
+5.  Add the name of your Heroku app to ALLOWED_HOSTS in the settings file on your IDE.
+6.  Under 'Deploy' click on 'Deploy Branch', which will pull your up to date repository.
+7.  Select 'open app' once had been built and your app should now be visible.
+8.  From here, you can add /admin to the URL to access the django administration dashboard. Here you can view and change users, groups and products. Can also view all of the orders made on the app.
 
 ## Credits
 ### Content
@@ -218,11 +221,11 @@ Some pages offer two possible paths in their call to action buttons:
 ### Acknowledgements
 - The footer, navbar and parallax effect were taken and amended from previous projects.
 
-- I found the lightbox snippet on the Inspiration page on: https://epicbootstrap.com/snippets/lightbox-gallery
+- I found the lightbox snippet on the Inspiration page [here](https://epicbootstrap.com/snippets/lightbox-gallery)
 
-- I found the snippet for the gallery carousel on the Home page on: https://stackoverflow.com/questions/20007610/bootstrap-carousel-multiple-frames-at-once
+- I found the snippet for the gallery carousel on the Home page [here](https://stackoverflow.com/questions/20007610/bootstrap-carousel-multiple-frames-at-once)
 
-- I found the snippet for the contact form on: https://hellowebbooks.com/news/tutorial-setting-up-a-contact-form-with-django/
+- I found the snippet for the contact form [here](https://hellowebbooks.com/news/tutorial-setting-up-a-contact-form-with-django/)
 
 - The shopping functionality was taken from the Fullstack Ecommece mini project with the Code Institute.
 
